@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="190815：动画练习1">
+<meta property="og:url" content="http://yoursite.com/2019/08/15/190815练习：动画练习1/index.html">
+<meta property="og:site_name" content="Roland Edgeworth">
+<meta property="og:description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用结构">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-15T05:54:18.102Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="190815：动画练习1">
+<meta name="twitter:description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用结构">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/08/15/190815练习：动画练习1/">
+
+
+
+
+
+  <title>190815：动画练习1 | Roland Edgeworth</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Roland Edgeworth</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/15/190815练习：动画练习1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rol E">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Roland Edgeworth">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">190815：动画练习1</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-15T10:30:54+08:00">
+                2019-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="8月15号的练习，css3-2D动画"><a href="#8月15号的练习，css3-2D动画" class="headerlink" title="8月15号的练习，css3  2D动画"></a>8月15号的练习，css3  2D动画</h1><ul>
+<li>看起来对资源的占用量似乎很高</li>
+<li>定义动画时会使用大量代码</li>
+<li>尝试使用 order 来代替 disappear 动画，失败</li>
+<li>图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg</li>
+<li>感受到了css3动画学习的简便，似乎比js要简单一些</li>
+<li>遗留问题：order 到底要在什么情况下使用<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;img src=&quot;bg1.jpg&quot; id=&quot;p1&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg2.jpg&quot; id=&quot;p2&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg3.jpg&quot; id=&quot;p3&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg4.jpg&quot; id=&quot;p4&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg5.jpg&quot; id=&quot;p5&quot; alt=&quot;&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p1&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p2&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p3&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p4&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p5&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    *&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">    html, body&#123;height: 100%;&#125;</span><br><span class="line">    body&#123;overflow: hidden;&#125;</span><br><span class="line">    img&#123;width: 100%;height: 100%;position: absolute;z-index: 1;&#125;</span><br><span class="line">    img:not(:target)&#123;animation: disappear 3s;&#125;</span><br><span class="line">    ul&#123;width: 100%;height: 174px;text-align: center;position: relative;z-index: 1000;top: 60%;&#125;</span><br><span class="line">    li&#123;height: 170px;width: 174px;border: 2px solid #fff;border-radius: 5px;display: inline-block;margin: 0 5px;&#125;</span><br><span class="line"></span><br><span class="line">    a&#123;background-color: #ccc;font-size: 14px;font-weight: bold;font-style: italic;text-shadow: -3px -5px 5px rgba(102, 102, 102, .4);</span><br><span class="line">    display: block;width: 100%;height: 100%;box-sizing: border-box;border-radius: 3px;position: relative;&#125;</span><br><span class="line">    a::before&#123;content: &quot;&quot;;width: 130px;height: 130px;box-sizing: border-box;border: 5px solid #fff;left: 20px;top: -65px;background-size: 350px 200px;background-repeat: no-repeat;background-position-x: -100px;&#125;</span><br><span class="line">    a::after&#123;content: &quot;&quot;;width: 120px;height: 120px;background-color: rgba(0, 0, 0, .4);left: 25px;top: -60px;&#125;</span><br><span class="line">    a::before, a::after&#123;border-radius: 50%;display: block;position: absolute;transition: all .2s linear;&#125;</span><br><span class="line">    a:hover::after&#123;opacity: 0;&#125;</span><br><span class="line"></span><br><span class="line">    #p1:target&#123;z-index: 100;animation: animation1 .5s forwards;&#125;</span><br><span class="line">    #p2:target&#123;z-index: 100;animation: animation2 1s forwards;&#125;</span><br><span class="line">    #p3:target&#123;z-index: 100;animation: animation3 .8s forwards;&#125;</span><br><span class="line">    #p4:target&#123;z-index: 100;animation: animation4 .5s forwards;&#125;</span><br><span class="line">    #p5:target&#123;z-index: 100;animation: animation5 .8s forwards;&#125;</span><br><span class="line">    li:nth-child(1) a&#123;background-color: #02646e&#125;</span><br><span class="line">    li:nth-child(2) a&#123;background-color: #eb0837&#125;</span><br><span class="line">    li:nth-child(3) a&#123;background-color: #67b374&#125;</span><br><span class="line">    li:nth-child(4) a&#123;background-color: #e6674a&#125;</span><br><span class="line">    li:nth-child(5) a&#123;background-color: #e61061&#125;</span><br><span class="line">    li:nth-child(1) a::before&#123;background-image: url(bg1.jpg);&#125;</span><br><span class="line">    li:nth-child(2) a::before&#123;background-image: url(bg2.jpg);&#125;</span><br><span class="line">    li:nth-child(3) a::before&#123;background-image: url(bg3.jpg);&#125;</span><br><span class="line">    li:nth-child(4) a::before&#123;background-image: url(bg4.jpg);&#125;</span><br><span class="line">    li:nth-child(5) a::before&#123;background-image: url(bg5.jpg);&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @keyframes animation1&#123;</span><br><span class="line">        0%&#123;width: 0;height: 0;&#125;</span><br><span class="line">        30%&#123;width: 0;height: 100%;&#125;</span><br><span class="line">        100%&#123;width: 100%;height: 100%;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation2&#123;</span><br><span class="line">        0%&#123;transform: rotate(0);width: 0;height: 0;margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">        100%&#123;transform: rotate(360deg);width: 100%;height: 100%;left: 0;right: 0;top: 0;bottom: 0;margin: auto;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation3&#123;</span><br><span class="line">        0%&#123;width: 0;height: 0;transform: scale(0);margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">        100%&#123;width: 100%;height: 100%;transform: scale(100%);margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation4&#123;</span><br><span class="line">        0%&#123;right: 100%;&#125;</span><br><span class="line">        100%&#123;right: 0;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation5&#123;</span><br><span class="line">        0%&#123;opacity: 0;&#125;</span><br><span class="line">        100%&#123;opacity: 1;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes disappear&#123;</span><br><span class="line">        0%&#123;z-index: 100;&#125;</span><br><span class="line">        100%&#123;z-index: 1;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/15/190815笔记/" rel="next" title="190815笔记">
+                <i class="fa fa-chevron-left"></i> 190815笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/15/190814笔记/" rel="prev" title="190814笔记">
+                190814笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rol E</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8月15号的练习，css3-2D动画"><span class="nav-number">1.</span> <span class="nav-text">8月15号的练习，css3  2D动画</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#结构"><span class="nav-number">1.1.</span> <span class="nav-text">结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样式"><span class="nav-number">1.2.</span> <span class="nav-text">样式</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rol E</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
