@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,13 +53,13 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -93,9 +93,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -140,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container sidebar-position-right 
   page-home">
     <div class="headband"></div>
 
@@ -299,51 +299,16 @@
 
       
         
-          
-            <h1 id="一-渐变-IE10"><a href="#一-渐变-IE10" class="headerlink" title="一  渐变  IE10+"></a>一  渐变  IE10+</h1><h2 id="线性渐变linear-gradient"><a href="#线性渐变linear-gradient" class="headerlink" title="线性渐变linear-gradient"></a>线性渐变linear-gradient</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image: linear-gradient(方向，起始颜色，结束颜色）</span><br></pre></td></tr></table></figure>
+          <h1 id="一-渐变-IE10"><a href="#一-渐变-IE10" class="headerlink" title="一  渐变  IE10+"></a>一  渐变  IE10+</h1><h2 id="线性渐变linear-gradient"><a href="#线性渐变linear-gradient" class="headerlink" title="线性渐变linear-gradient"></a>线性渐变linear-gradient</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image: linear-gradient(方向，起始颜色，结束颜色）</span><br></pre></td></tr></table></figure>
 
 <h2 id="处理兼容"><a href="#处理兼容" class="headerlink" title="处理兼容"></a>处理兼容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">background-image: -webkit-linear-gradient(to top, red, yellow)</span><br><span class="line">background-image: -moz-linear-gradient(to top, red, yellow)</span><br><span class="line">background-image: -o-linear-gradient(to top, red, yellow)</span><br><span class="line">background-image: -ms-linear-gradient(to top, red, yellow)</span><br><span class="line">background-image: linear-gradient(to top, red, yellow)</span><br></pre></td></tr></table></figure>
-
-<h2 id="方向可以使用角度（30deg）也可以使用关键字（to-right等）"><a href="#方向可以使用角度（30deg）也可以使用关键字（to-right等）" class="headerlink" title="方向可以使用角度（30deg）也可以使用关键字（to right等）"></a>方向可以使用角度（30deg）也可以使用关键字（to right等）</h2><p>to top:0deg  360deg  -360deg;<br>to bottom:180deg  -180deg;<br>to right:90deg  -270deg;<br>to left:-90deg  270deg;<br>to top left:从右下角到左上角</p>
-<h2 id="多色线性渐变，只需在后面添加更多的颜色即可"><a href="#多色线性渐变，只需在后面添加更多的颜色即可" class="headerlink" title="多色线性渐变，只需在后面添加更多的颜色即可"></a>多色线性渐变，只需在后面添加更多的颜色即可</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image: linear-gradient(to top, red, yellow, blue, green, orange)</span><br></pre></td></tr></table></figure>
-
-<h2 id="自定义线性渐变"><a href="#自定义线性渐变" class="headerlink" title="自定义线性渐变"></a>自定义线性渐变</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">background-image: linear-gradient(</span><br><span class="line">	to top,</span><br><span class="line">	rgba(255, 206, 0, .5) 0%,</span><br><span class="line">	rgba(255, 255, 0, .4) 10%,</span><br><span class="line">	rgba(255, 104, 0, .6) 15%,</span><br><span class="line">	rgba(255, 0, 255, .5) 20%,</span><br><span class="line">	rgba(255, 0, 206, .8) 40%,</span><br><span class="line">	rgba(255, 0, 200, .5) 50%,</span><br><span class="line">	rgba(255, 0, 222, .9) 60%,</span><br><span class="line">	rgba(255, 123, 0,.2) 80%,</span><br><span class="line">	rgba(255, 108, 0,.5) 100%</span><br><span class="line">	)</span><br></pre></td></tr></table></figure>
-
-<h2 id="重复线性渐变"><a href="#重复线性渐变" class="headerlink" title="重复线性渐变"></a>重复线性渐变</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">background-image: repeating-linear-gradient(</span><br><span class="line">	to top,</span><br><span class="line">	rgba(255,206, 0, .5) 40px,</span><br><span class="line">	rgba(255,255, 0, .4) 80px</span><br><span class="line">	)</span><br></pre></td></tr></table></figure>
-
-<h2 id="径向渐变radial-gradient"><a href="#径向渐变radial-gradient" class="headerlink" title="径向渐变radial-gradient"></a>径向渐变radial-gradient</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">background-image: radial-gradient（形状  at  圆心坐标, 颜色）</span><br><span class="line"></span><br><span class="line">background-image:radial-gradient(主要半径 次要半径 at 水平 垂直, red, yellow)</span><br><span class="line">background-image:radial-gradient(50px 100px at 200px 250px, red, yellow)</span><br><span class="line"></span><br><span class="line">background-image:radial-gradient(主次半径相等就是圆 at 水平 垂直,red,yellow)</span><br><span class="line">background-image:radial-gradient(circle at right bottom, red, yellow)</span><br><span class="line"></span><br><span class="line">background-image:radial-gradient(主次半径不相等是椭圆 at 水平 垂直,red,yellow)</span><br><span class="line">background-image:radial-gradient(ellipse at top, red, yellow)</span><br><span class="line"></span><br><span class="line">background-image:radial-gradient(圆心与中心重合,red,yellow)</span><br><span class="line">background-image:radial-gradient(circle, red, yellow)</span><br></pre></td></tr></table></figure>
-
-<h2 id="重复径向渐变"><a href="#重复径向渐变" class="headerlink" title="重复径向渐变"></a>重复径向渐变</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">background-image: repeating-radial-gradient(</span><br><span class="line">	to top,</span><br><span class="line">	rgba(255, 206, 0, .5) 40px,</span><br><span class="line">	rgba(255, 255, 0, .4) 80px</span><br><span class="line">	)</span><br></pre></td></tr></table></figure>
-
-<h1 id="二-过渡-IE10"><a href="#二-过渡-IE10" class="headerlink" title="二  过渡  IE10+"></a>二  过渡  IE10+</h1><h2 id="transition：过渡属性-property-过渡所需时间-duration-过渡动画函数-timing-function-过渡延迟时间-delay"><a href="#transition：过渡属性-property-过渡所需时间-duration-过渡动画函数-timing-function-过渡延迟时间-delay" class="headerlink" title="transition：过渡属性 property  过渡所需时间 duration   过渡动画函数 timing-function  过渡延迟时间 delay"></a>transition：过渡属性 property  过渡所需时间 duration   过渡动画函数 timing-function  过渡延迟时间 delay</h2><h3 id="各个属性可以分开写，一次可以过渡多个属性"><a href="#各个属性可以分开写，一次可以过渡多个属性" class="headerlink" title="各个属性可以分开写，一次可以过渡多个属性"></a>各个属性可以分开写，一次可以过渡多个属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">-webkit-transition-property:background, width, height;</span><br><span class="line">-webkit-transition-duration:1s, 1s, 1s;</span><br><span class="line">-webkit-transition-timing-function:linear, linear, linear;</span><br><span class="line">-webkit-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">-moz-transition-property:background, width, height;</span><br><span class="line">-moz-transition-duration:1s, 1s, 1s;</span><br><span class="line">-moz-transition-timing-function:linear, linear, linear;</span><br><span class="line">-moz-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">-ms-transition-property:background, width, height;</span><br><span class="line">-ms-transition-duration:1s,1s,1s;</span><br><span class="line">-ms-transition-timing-function:linear, linear, linear;</span><br><span class="line">-ms-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">-o-transition-property:background, width, height;</span><br><span class="line">-o-transition-duration:1s, 1s, 1s;</span><br><span class="line">-o-transition-timing-function:linear, linear, linear;</span><br><span class="line">-o-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">transition-property:background, width, height;</span><br><span class="line">transition-duration:1s, 1s, 1s;</span><br><span class="line">transition-timing-function:linear, linear, linear;</span><br><span class="line">transition-delay:1s, 0s, 2s;</span><br></pre></td></tr></table></figure>
-
-<h3 id="过渡动画函数timing-function"><a href="#过渡动画函数timing-function" class="headerlink" title="过渡动画函数timing-function"></a>过渡动画函数timing-function</h3><p>ease  先快后慢，逐渐变慢<br>linear  匀速<br>ease-in  速度越来越快，称为渐显效果<br>ease-out  速度越来越慢，称为渐隐效果<br>ease-in-out  先加速再减速，称为渐显渐隐效果<br>cubic-bezier(.61,.17,.92,.1)  三次贝塞尔曲线</p>
-<h1 id="三-变形transform"><a href="#三-变形transform" class="headerlink" title="三 变形transform"></a>三 变形transform</h1><h2 id="2D变形-transform-function"><a href="#2D变形-transform-function" class="headerlink" title="2D变形 transform-function"></a>2D变形 transform-function</h2><h3 id="translate移动（水平偏移量-向右为正-垂直偏移量-向下为正）"><a href="#translate移动（水平偏移量-向右为正-垂直偏移量-向下为正）" class="headerlink" title="translate移动（水平偏移量 向右为正 , 垂直偏移量 向下为正）"></a>translate移动（水平偏移量 向右为正 , 垂直偏移量 向下为正）</h3><p>   如果只有水平方向发生偏移，y的0可以省略不写<br>   transform: translate(100px) 向右偏移100px<br>   单一方向偏移可以直接使用：translateX() 和translateY();</p>
-<h3 id="scale缩放（X轴方向的缩放量-Y轴方向的放量）"><a href="#scale缩放（X轴方向的缩放量-Y轴方向的放量）" class="headerlink" title="scale缩放（X轴方向的缩放量 , Y轴方向的放量）"></a>scale缩放（X轴方向的缩放量 , Y轴方向的放量）</h3><p>   绝对值小于1为缩小，大于1放大<br>   只写一个值代表四周同时放大缩小<br>   取值可以为负数，负数时会进行翻转后再缩放</p>
-<h3 id="rotate旋转（角度，正数时顺时针旋转，负数时逆时针旋转）"><a href="#rotate旋转（角度，正数时顺时针旋转，负数时逆时针旋转）" class="headerlink" title="rotate旋转（角度，正数时顺时针旋转，负数时逆时针旋转）"></a>rotate旋转（角度，正数时顺时针旋转，负数时逆时针旋转）</h3><h3 id="skew倾斜（X轴方向倾斜，Y轴方向倾斜）"><a href="#skew倾斜（X轴方向倾斜，Y轴方向倾斜）" class="headerlink" title="skew倾斜（X轴方向倾斜，Y轴方向倾斜）"></a>skew倾斜（X轴方向倾斜，Y轴方向倾斜）</h3><p>   如果只有X轴方向发生倾斜，y的0可以省略不写<br>   transform: skew(45deg)  相当于skew(45deg,0);<br>   单一方向倾斜可以直接使用：skewX() 和 skewY();</p>
-<h3 id="transform-origin-指定元素的中心点位置"><a href="#transform-origin-指定元素的中心点位置" class="headerlink" title="transform-origin 指定元素的中心点位置"></a>transform-origin 指定元素的中心点位置</h3><p>可以是百分数，数值，方向单词(top left right bottom center)<br>transform-origin: 50% 50%;</p>
-<h1 id="四-3D变形"><a href="#四-3D变形" class="headerlink" title="四  3D变形"></a>四  3D变形</h1><h2 id="浏览器支持情况："><a href="#浏览器支持情况：" class="headerlink" title="浏览器支持情况："></a>浏览器支持情况：</h2><p>Internet Explorer 10 和 Firefox 支持 3D 变形<br>Chrome 和 Safari 需要前缀 -webkit-<br>Opera 仍然不支持 3D 变形(它只支持 2D 变形)</p>
-<h2 id="变形类型：transform-style-preserve-3d"><a href="#变形类型：transform-style-preserve-3d" class="headerlink" title="变形类型：transform-style:preserve-3d"></a>变形类型：transform-style:preserve-3d</h2><p>实现一些3D效果的时候，transform-style: preserve-3d是少不了的<br>一般而言，该声明应用在3D变换的兄弟元素们的父元素上</p>
-<p>preserve-3d 放到父元素上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-webkit-transform-style: preserve-3d;</span><br><span class="line">-moz-transform-style: preserve-3d;</span><br><span class="line">-ms-transform-style: preserve-3d;</span><br><span class="line">-o-transform-style: preserve-3d;</span><br><span class="line">transform-style: preserve-3d;</span><br></pre></td></tr></table></figure>
-
-<h2 id="perspective：透视，视角，景深"><a href="#perspective：透视，视角，景深" class="headerlink" title="perspective：透视，视角，景深"></a>perspective：透视，视角，景深</h2><p>写到父元素上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-webkit-perspective: 1200px;</span><br><span class="line">-moz-perspective: 1200px;</span><br><span class="line">-ms-perspective: 1200px;</span><br><span class="line">perspective: 1200px;</span><br></pre></td></tr></table></figure>
-
-<p>perspective的两种书写方式  perspective:1200px;   或者  transform:perspective(1200px) </p>
-<h2 id="3D位移"><a href="#3D位移" class="headerlink" title="3D位移"></a>3D位移</h2><p>transform: translate3d(30px, 30px, 800px)<br>transform:translateZ(800px) translateX(30px) translateY(30px);<br>transform:translateZ(800px) translate(30px, 30px);</p>
-<h2 id="3D旋转"><a href="#3D旋转" class="headerlink" title="3D旋转"></a>3D旋转</h2><p>transform: rotate3d(x, y, z, a); </p>
-<p>transform: rotate3d(1, 0, 0, 45deg);<br>transform: rotateX(45deg);</p>
-<p>transform: rotate3d(0, 1, 0, 45deg);<br>transform: rotateY945deg);</p>
-<p>transform: rotate3d(0, 0, 1, 45deg);<br>transform: rotateZ(45deg);</p>
-<h2 id="3D缩放"><a href="#3D缩放" class="headerlink" title="3D缩放"></a>3D缩放</h2><p>scale3d 不能自己单独使用，需要配合其他变形一起使用才会有效果。<br>transform: scaleZ(5) rotateX(45deg); ——是轴在缩放<br>transform: scale3d(1,1,5) rotateX(45deg);</p>
-<h1 id="五-CSS3动画"><a href="#五-CSS3动画" class="headerlink" title="五  CSS3动画"></a>五  CSS3动画</h1><h2 id="相关动画属性"><a href="#相关动画属性" class="headerlink" title="相关动画属性"></a>相关动画属性</h2><p>animation: 动画名称  动画所需时间  动画播放方式  动画开始时间  循环次数  播放方向  </p>
-<p>animation-name: 动画名称—–声明的动画名称<br>animation-duration: 动画所需时间—完成0%-100%动画所需时间<br>animation-timing-function: 动画播放方式 —-同过渡<br>                 step-start 阻止帧与帧之间的过渡，瞬间切换到下一帧<br>animation-delay: 等待动画的时间<br>animation-iteration-count: 循环次数—-默认为1，infinite循环播放<br>animation-direction: 播放方向—-默认normal，向前播放；alternate，播放次数为偶数则向前播放，为奇数时向反方向播放<br>animation-play-state: running  动画状态  running 动起来  paused暂停</p>
-<h2 id="关键帧声明动画-keyframes"><a href="#关键帧声明动画-keyframes" class="headerlink" title="关键帧声明动画 @keyframes"></a>关键帧声明动画 @keyframes</h2><p>@keyframes name{<br>    from{<br>        css样式;<br>    }<br>    percentage{<br>        css样式;<br>    }<br>    to{<br>        css样式;<br>    }<br>}</p>
-<p>@keyframes name{<br>    0%{<br>        css样式;<br>    }<br>    percentage{<br>        css样式;<br>    }<br>    100%{<br>        css样式;<br>    }<br>}</p>
-<h2 id="调用-keyframes声明的动画"><a href="#调用-keyframes声明的动画" class="headerlink" title="调用@keyframes声明的动画"></a>调用@keyframes声明的动画</h2><p>animation:run 1s infinite alternate ;</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/15/190814笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -460,22 +425,23 @@
 
       
         
-          
-            <h1 id="8月15号的练习，css3-2D动画"><a href="#8月15号的练习，css3-2D动画" class="headerlink" title="8月15号的练习，css3  2D动画"></a>8月15号的练习，css3  2D动画</h1><ul>
+          <h1 id="8月15号的练习，css3-2D动画"><a href="#8月15号的练习，css3-2D动画" class="headerlink" title="8月15号的练习，css3  2D动画"></a>8月15号的练习，css3  2D动画</h1><ul>
 <li>看起来对资源的占用量似乎很高</li>
 <li>定义动画时会使用大量代码</li>
 <li>尝试使用 order 来代替 disappear 动画，失败</li>
 <li>图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg</li>
 <li>感受到了css3动画学习的简便，似乎比js要简单一些</li>
-<li>遗留问题：order 到底要在什么情况下使用</li>
-</ul>
-<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;img src=&quot;bg1.jpg&quot; id=&quot;p1&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg2.jpg&quot; id=&quot;p2&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg3.jpg&quot; id=&quot;p3&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg4.jpg&quot; id=&quot;p4&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg5.jpg&quot; id=&quot;p5&quot; alt=&quot;&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p1&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p2&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p3&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p4&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p5&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    *&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">    html, body&#123;height: 100%;&#125;</span><br><span class="line">    body&#123;overflow: hidden;&#125;</span><br><span class="line">    img&#123;width: 100%;height: 100%;position: absolute;z-index: 1;&#125;</span><br><span class="line">    img:not(:target)&#123;animation: disappear 3s;&#125;</span><br><span class="line">    ul&#123;width: 100%;height: 174px;text-align: center;position: relative;z-index: 1000;top: 60%;&#125;</span><br><span class="line">    li&#123;height: 170px;width: 174px;border: 2px solid #fff;border-radius: 5px;display: inline-block;margin: 0 5px;&#125;</span><br><span class="line"></span><br><span class="line">    a&#123;background-color: #ccc;font-size: 14px;font-weight: bold;font-style: italic;text-shadow: -3px -5px 5px rgba(102, 102, 102, .4);</span><br><span class="line">    display: block;width: 100%;height: 100%;box-sizing: border-box;border-radius: 3px;position: relative;&#125;</span><br><span class="line">    a::before&#123;content: &quot;&quot;;width: 130px;height: 130px;box-sizing: border-box;border: 5px solid #fff;left: 20px;top: -65px;background-size: 350px 200px;background-repeat: no-repeat;background-position-x: -100px;&#125;</span><br><span class="line">    a::after&#123;content: &quot;&quot;;width: 120px;height: 120px;background-color: rgba(0, 0, 0, .4);left: 25px;top: -60px;&#125;</span><br><span class="line">    a::before, a::after&#123;border-radius: 50%;display: block;position: absolute;transition: all .2s linear;&#125;</span><br><span class="line">    a:hover::after&#123;opacity: 0;&#125;</span><br><span class="line"></span><br><span class="line">    #p1:target&#123;z-index: 100;animation: animation1 .5s forwards;&#125;</span><br><span class="line">    #p2:target&#123;z-index: 100;animation: animation2 1s forwards;&#125;</span><br><span class="line">    #p3:target&#123;z-index: 100;animation: animation3 .8s forwards;&#125;</span><br><span class="line">    #p4:target&#123;z-index: 100;animation: animation4 .5s forwards;&#125;</span><br><span class="line">    #p5:target&#123;z-index: 100;animation: animation5 .8s forwards;&#125;</span><br><span class="line">    li:nth-child(1) a&#123;background-color: #02646e&#125;</span><br><span class="line">    li:nth-child(2) a&#123;background-color: #eb0837&#125;</span><br><span class="line">    li:nth-child(3) a&#123;background-color: #67b374&#125;</span><br><span class="line">    li:nth-child(4) a&#123;background-color: #e6674a&#125;</span><br><span class="line">    li:nth-child(5) a&#123;background-color: #e61061&#125;</span><br><span class="line">    li:nth-child(1) a::before&#123;background-image: url(bg1.jpg);&#125;</span><br><span class="line">    li:nth-child(2) a::before&#123;background-image: url(bg2.jpg);&#125;</span><br><span class="line">    li:nth-child(3) a::before&#123;background-image: url(bg3.jpg);&#125;</span><br><span class="line">    li:nth-child(4) a::before&#123;background-image: url(bg4.jpg);&#125;</span><br><span class="line">    li:nth-child(5) a::before&#123;background-image: url(bg5.jpg);&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @keyframes animation1&#123;</span><br><span class="line">        0%&#123;width: 0;height: 0;&#125;</span><br><span class="line">        30%&#123;width: 0;height: 100%;&#125;</span><br><span class="line">        100%&#123;width: 100%;height: 100%;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation2&#123;</span><br><span class="line">        0%&#123;transform: rotate(0);width: 0;height: 0;margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">        100%&#123;transform: rotate(360deg);width: 100%;height: 100%;left: 0;right: 0;top: 0;bottom: 0;margin: auto;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation3&#123;</span><br><span class="line">        0%&#123;width: 0;height: 0;transform: scale(0);margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">        100%&#123;width: 100%;height: 100%;transform: scale(100%);margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation4&#123;</span><br><span class="line">        0%&#123;right: 100%;&#125;</span><br><span class="line">        100%&#123;right: 0;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation5&#123;</span><br><span class="line">        0%&#123;opacity: 0;&#125;</span><br><span class="line">        100%&#123;opacity: 1;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes disappear&#123;</span><br><span class="line">        0%&#123;z-index: 100;&#125;</span><br><span class="line">        100%&#123;z-index: 1;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-          
+<li>遗留问题：order 到底要在什么情况下使用
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/15/190815：动画练习1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </li></ul></div>
     
     
     
@@ -589,18 +555,18 @@
 
       
         
-          
-            <h1 id="190815-听课记录"><a href="#190815-听课记录" class="headerlink" title="190815 听课记录"></a>190815 听课记录</h1><h2 id="css操作方式"><a href="#css操作方式" class="headerlink" title="css操作方式"></a>css操作方式</h2><h3 id="1-inline-block-垂直不对齐的情况"><a href="#1-inline-block-垂直不对齐的情况" class="headerlink" title="1.inline-block 垂直不对齐的情况"></a>1.inline-block 垂直不对齐的情况</h3><ul>
+          <h1 id="190815-听课记录"><a href="#190815-听课记录" class="headerlink" title="190815 听课记录"></a>190815 听课记录</h1><h2 id="css操作方式"><a href="#css操作方式" class="headerlink" title="css操作方式"></a>css操作方式</h2><h3 id="1-inline-block-垂直不对齐的情况"><a href="#1-inline-block-垂直不对齐的情况" class="headerlink" title="1.inline-block 垂直不对齐的情况"></a>1.inline-block 垂直不对齐的情况</h3><ul>
 <li>inline-block 会默认基线对齐，在对容器使用时，因内部文字数量及字号行高不同，可能会影响对齐效果。</li>
 <li>解决方案：在类型为 inline-block 的容器上添加 vertical-align: top;</li>
 </ul>
-<h3 id="2-动画练习时遇到的问题的解决方案"><a href="#2-动画练习时遇到的问题的解决方案" class="headerlink" title="2.动画练习时遇到的问题的解决方案"></a>2.动画练习时遇到的问题的解决方案</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@keyframes disappear&#123;</span><br><span class="line">    0%&#123;z-index: 100;&#125;</span><br><span class="line">    100%&#123;z-index: 1;&#125;</span><br><span class="line">&#125;</span><br><span class="line">img:not(:target)&#123;animation: disappear 3s;&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-经常忘记的属性"><a href="#3-经常忘记的属性" class="headerlink" title="3.经常忘记的属性"></a>3.经常忘记的属性</h3><ul>
-<li>文本倾斜  font-style: italic</li>
-</ul>
-
-          
+<h3 id="2-动画练习时遇到的问题的解决方案"><a href="#2-动画练习时遇到的问题的解决方案" class="headerlink" title="2.动画练习时遇到的问题的解决方案"></a>2.动画练习时遇到的问题的解决方案</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/15/190815笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1116,7 +1082,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -1215,13 +1181,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
 

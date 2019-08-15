@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,13 +53,13 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用  结构1234567891011121314151">
+<meta name="description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="190815：动画练习1">
 <meta property="og:url" content="http://yoursite.com/2019/08/15/190815：动画练习1/index.html">
 <meta property="og:site_name" content="Roland Edgeworth">
-<meta property="og:description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用  结构1234567891011121314151">
+<meta property="og:description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-15T04:07:28.845Z">
+<meta property="og:updated_time" content="2019-08-15T05:36:18.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="190815：动画练习1">
-<meta name="twitter:description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用  结构1234567891011121314151">
+<meta name="twitter:description" content="8月15号的练习，css3  2D动画 看起来对资源的占用量似乎很高 定义动画时会使用大量代码 尝试使用 order 来代替 disappear 动画，失败 图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg 感受到了css3动画学习的简便，似乎比js要简单一些 遗留问题：order 到底要在什么情况下使用">
 
 
 
@@ -97,9 +97,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -144,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -305,10 +305,11 @@
 <li>尝试使用 order 来代替 disappear 动画，失败</li>
 <li>图片路径为当前路径下 bg1.jpg, bg2.jpg 以及bg3 bg4 bg5.jpg</li>
 <li>感受到了css3动画学习的简便，似乎比js要简单一些</li>
-<li>遗留问题：order 到底要在什么情况下使用</li>
-</ul>
+<li>遗留问题：order 到底要在什么情况下使用<a id="more"></a>
 <h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;img src=&quot;bg1.jpg&quot; id=&quot;p1&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg2.jpg&quot; id=&quot;p2&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg3.jpg&quot; id=&quot;p3&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg4.jpg&quot; id=&quot;p4&quot; alt=&quot;&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;bg5.jpg&quot; id=&quot;p5&quot; alt=&quot;&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p1&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p2&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p3&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p4&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">            &lt;a href=&quot;#p5&quot;&gt;&lt;/a&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
 
+</li>
+</ul>
 <h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    *&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">    html, body&#123;height: 100%;&#125;</span><br><span class="line">    body&#123;overflow: hidden;&#125;</span><br><span class="line">    img&#123;width: 100%;height: 100%;position: absolute;z-index: 1;&#125;</span><br><span class="line">    img:not(:target)&#123;animation: disappear 3s;&#125;</span><br><span class="line">    ul&#123;width: 100%;height: 174px;text-align: center;position: relative;z-index: 1000;top: 60%;&#125;</span><br><span class="line">    li&#123;height: 170px;width: 174px;border: 2px solid #fff;border-radius: 5px;display: inline-block;margin: 0 5px;&#125;</span><br><span class="line"></span><br><span class="line">    a&#123;background-color: #ccc;font-size: 14px;font-weight: bold;font-style: italic;text-shadow: -3px -5px 5px rgba(102, 102, 102, .4);</span><br><span class="line">    display: block;width: 100%;height: 100%;box-sizing: border-box;border-radius: 3px;position: relative;&#125;</span><br><span class="line">    a::before&#123;content: &quot;&quot;;width: 130px;height: 130px;box-sizing: border-box;border: 5px solid #fff;left: 20px;top: -65px;background-size: 350px 200px;background-repeat: no-repeat;background-position-x: -100px;&#125;</span><br><span class="line">    a::after&#123;content: &quot;&quot;;width: 120px;height: 120px;background-color: rgba(0, 0, 0, .4);left: 25px;top: -60px;&#125;</span><br><span class="line">    a::before, a::after&#123;border-radius: 50%;display: block;position: absolute;transition: all .2s linear;&#125;</span><br><span class="line">    a:hover::after&#123;opacity: 0;&#125;</span><br><span class="line"></span><br><span class="line">    #p1:target&#123;z-index: 100;animation: animation1 .5s forwards;&#125;</span><br><span class="line">    #p2:target&#123;z-index: 100;animation: animation2 1s forwards;&#125;</span><br><span class="line">    #p3:target&#123;z-index: 100;animation: animation3 .8s forwards;&#125;</span><br><span class="line">    #p4:target&#123;z-index: 100;animation: animation4 .5s forwards;&#125;</span><br><span class="line">    #p5:target&#123;z-index: 100;animation: animation5 .8s forwards;&#125;</span><br><span class="line">    li:nth-child(1) a&#123;background-color: #02646e&#125;</span><br><span class="line">    li:nth-child(2) a&#123;background-color: #eb0837&#125;</span><br><span class="line">    li:nth-child(3) a&#123;background-color: #67b374&#125;</span><br><span class="line">    li:nth-child(4) a&#123;background-color: #e6674a&#125;</span><br><span class="line">    li:nth-child(5) a&#123;background-color: #e61061&#125;</span><br><span class="line">    li:nth-child(1) a::before&#123;background-image: url(bg1.jpg);&#125;</span><br><span class="line">    li:nth-child(2) a::before&#123;background-image: url(bg2.jpg);&#125;</span><br><span class="line">    li:nth-child(3) a::before&#123;background-image: url(bg3.jpg);&#125;</span><br><span class="line">    li:nth-child(4) a::before&#123;background-image: url(bg4.jpg);&#125;</span><br><span class="line">    li:nth-child(5) a::before&#123;background-image: url(bg5.jpg);&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @keyframes animation1&#123;</span><br><span class="line">        0%&#123;width: 0;height: 0;&#125;</span><br><span class="line">        30%&#123;width: 0;height: 100%;&#125;</span><br><span class="line">        100%&#123;width: 100%;height: 100%;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation2&#123;</span><br><span class="line">        0%&#123;transform: rotate(0);width: 0;height: 0;margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">        100%&#123;transform: rotate(360deg);width: 100%;height: 100%;left: 0;right: 0;top: 0;bottom: 0;margin: auto;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation3&#123;</span><br><span class="line">        0%&#123;width: 0;height: 0;transform: scale(0);margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">        100%&#123;width: 100%;height: 100%;transform: scale(100%);margin: auto;left: 0;right: 0;top: 0;bottom: 0;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation4&#123;</span><br><span class="line">        0%&#123;right: 100%;&#125;</span><br><span class="line">        100%&#123;right: 0;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes animation5&#123;</span><br><span class="line">        0%&#123;opacity: 0;&#125;</span><br><span class="line">        100%&#123;opacity: 1;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes disappear&#123;</span><br><span class="line">        0%&#123;z-index: 100;&#125;</span><br><span class="line">        100%&#123;z-index: 1;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -497,7 +498,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -596,13 +597,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
