@@ -299,8 +299,7 @@
 
       
         
-          
-            <h1 id="一、HTML元素分类"><a href="#一、HTML元素分类" class="headerlink" title="一、HTML元素分类"></a>一、HTML元素分类</h1><p>根据css显示分类 , HTML元素被分为三种类型:块状元素 , 内联元素 , 可变元素</p>
+          <h1 id="一、HTML元素分类"><a href="#一、HTML元素分类" class="headerlink" title="一、HTML元素分类"></a>一、HTML元素分类</h1><p>根据css显示分类 , HTML元素被分为三种类型:块状元素 , 内联元素 , 可变元素</p>
 <h2 id="1-块状元素-block-element"><a href="#1-块状元素-block-element" class="headerlink" title="1.块状元素 ( block element )"></a>1.块状元素 ( block element )</h2><ul>
 <li><p>块状元素在网页中就是以块的形式显示 , 所谓块状就是元素显示为矩形区域 , 常用的块状元素包块div,dl,dt,dd,ol,ul,(h1-h6),p,form,hr,table,tr,td等；</p>
 </li>
@@ -310,186 +309,16 @@
 </li>
 <li><p>块状元素一般都作为其他元素的容器 , 它可以容纳其它内联元素和其它块状元素。</p>
 <p>我们可以把这种容器比喻为一个盒子。</p>
-</li>
-</ul>
-<h2 id="2-内联元素-inline-element-或是行内元素、行间元素、内嵌元素"><a href="#2-内联元素-inline-element-或是行内元素、行间元素、内嵌元素" class="headerlink" title="2.内联元素 ( inline element ) ( 或是行内元素、行间元素、内嵌元素 )"></a>2.内联元素 ( inline element ) ( 或是行内元素、行间元素、内嵌元素 )</h2><ul>
-<li><p>常见的内联元素如 : a,span,i,em,strong,b , img , input等</p>
-</li>
-<li><p>内联元素的表现形式是始终以行内逐个进行显示</p>
-</li>
-<li><p>内联元素没有自己的形状 , 不能定义它的宽和高,它显示的宽度、高度只能根据所包含内容的高度和宽度来确定 , 它的最小内容单元也会呈现矩形形状</p>
-</li>
-<li><p>内联元素也会遵循盒模型基本规则 , 如可以定义padding ,border ,margin, background等属性 , 但个别属性不能正确显示</p>
-</li>
-</ul>
-<h1 id="二、-元素类型的转换"><a href="#二、-元素类型的转换" class="headerlink" title="二、 元素类型的转换"></a>二、 元素类型的转换</h1><p>盒模型可通过display属性来改变元素的类型</p>
-<h2 id="display属性与属性值-常用"><a href="#display属性与属性值-常用" class="headerlink" title="display属性与属性值    (常用)"></a>display属性与属性值    (常用)</h2><p>值 | 描述</p>
-<ul>
-<li>| - | -<br>inline | 默认，显示为内联元素，元素前后没有换行符<br>flex | 定义伸缩容器<br>none | 此元素不会被显示<br>block | 显示为块级元素，前后带有换行符<br>inline-block | 元素的内容以块状显示 , 行内的其他元素显示在同一行( 只有这一个元素类型支持vertical-align属性 )<br>table-cell | 此元素会作为一个表格单元格显示<br>list-item | 此元素会作为列表显示<br>run-in | 此元素会根据上下文作为块级元素或内联元素显示<br>table | 此元素会作为块级表格来显示，表格前后带有换行符<br>inline-table | 此元素会作为内联表格来显示，表格前后没有换行符</li>
-</ul>
-<h3 id="另注："><a href="#另注：" class="headerlink" title="另注："></a>另注：</h3><ul>
-<li>当元素设置了float属性后 , 就相当于给该元素加了display:block;属性</li>
-<li>大部分块元素display属性值默认为block , 其中列表的默认值为list-item。</li>
-<li>大部分内联元素的display属性值默认为inline,其中img,input , 默认为inline-block。</li>
-</ul>
-<h1 id="三、置换元素"><a href="#三、置换元素" class="headerlink" title="三、置换元素"></a>三、置换元素</h1><p>内联元素一般是不能设置宽高的 , 但是也有特殊情况 , 比如img是内联元素 , 但可以设置宽高 , 这让不少人迷惑。于是我们就要引入HTML中置换元素的概念。  </p>
-<center>置换元素 : 浏览器根据元素的标签和属性 , 来决定元素的具体显示内容。</center>  
-
-<p>例如 :<br>浏览器会根据img标签的src属性的值来读取图片信息并显示出来<br>input标签的type属性来决定是显示输入框 , 还是单选按钮等</p>
-<center>不可替换元素 : html 的大多数元素是不可替换元素 , 即其内容直接表现给用户端</center>
-
-
-<h1 id="附录1-关于属性的继承"><a href="#附录1-关于属性的继承" class="headerlink" title="附录1 : 关于属性的继承"></a>附录1 : 关于属性的继承</h1><p>什么叫继承？</p>
-<center>父盒子的属性 , 如果子盒子能够读取得到 , 那么就是可以继承。 </center>  
-
-
-<table>
-<thead>
-<tr>
-<th>不可继承</th>
-<th>文本可继承</th>
-<th>列表元素可继承</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>display</td>
-<td>letter-spacing</td>
-<td>list-style</td>
-</tr>
-<tr>
-<td>margin</td>
-<td>word-spacing</td>
-<td>list-style-type</td>
-</tr>
-<tr>
-<td>border</td>
-<td>white-space</td>
-<td>list-style-position</td>
-</tr>
-<tr>
-<td>padding</td>
-<td>line-height</td>
-<td>list-style-image</td>
-</tr>
-<tr>
-<td>background</td>
-<td>color</td>
-<td></td>
-</tr>
-<tr>
-<td>height</td>
-<td>font</td>
-<td></td>
-</tr>
-<tr>
-<td>min-height</td>
-<td>font-family</td>
-<td></td>
-</tr>
-<tr>
-<td>max-height</td>
-<td>font-size</td>
-<td></td>
-</tr>
-<tr>
-<td>width</td>
-<td>font-style</td>
-<td></td>
-</tr>
-<tr>
-<td>min-width</td>
-<td>font-variant</td>
-<td></td>
-</tr>
-<tr>
-<td>max-width</td>
-<td>font-weight</td>
-<td></td>
-</tr>
-<tr>
-<td>overflow</td>
-<td>text-decoration</td>
-<td></td>
-</tr>
-<tr>
-<td>position</td>
-<td>text-transform</td>
-<td></td>
-</tr>
-<tr>
-<td>left</td>
-<td>direction</td>
-<td></td>
-</tr>
-<tr>
-<td>right</td>
-<td>text-indent</td>
-<td></td>
-</tr>
-<tr>
-<td>top</td>
-<td>text-align</td>
-<td></td>
-</tr>
-<tr>
-<td>bottom</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>z-index</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>float</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>clear</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>table-layout</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>vertical-align</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>page-break-after</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>page-bread-before</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>unicode-bidi</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h1 id="附录2-元素类型表"><a href="#附录2-元素类型表" class="headerlink" title="附录2 : 元素类型表"></a>附录2 : 元素类型表</h1><h2 id="块元素-block-element"><a href="#块元素-block-element" class="headerlink" title="块元素(block element)"></a>块元素(block element)</h2><p>元素 | 描述</p>
-<ul>
-<li>| - | -<br>　　  address | 地址<br>　　  blockquote | 块引用<br>　　  center | 局中对齐块<br>　　  dir | 目录列表<br>　　  div | 常用块级容器 , 也是css layout的主要标签<br>　　  dl | 定义列表<br>　　  fieldset | form控制组<br>　　  form | 交互表单<br>　　  h1 | 大标题<br>　　  h2 | 副标题<br>　　  h3 | 3级标题<br>　　  h4 | 4级标题<br>　　  h5 | 5级标题<br>　　  h6 | 6级标题<br>　　  hr | 水平分隔线<br>　　  isindex | input prompt<br>　　  menu | 菜单列表<br>　　  noframes | frames可选内容 ,  ( 不支持frame的浏览器显示此区块内容 )<br>　　  noscript | 可选脚本内容 ( 对于不支持script的浏览器显示此内容 )<br>　　  ol | 排序表单<br>　　  p | 段落<br>　　  pre | 格式化文本<br>　　  table | 表格<br>　　  ul | 非排序列表  </li>
-</ul>
-<h2 id="内联元素-inline-element"><a href="#内联元素-inline-element" class="headerlink" title="内联元素(inline element)"></a>内联元素(inline element)</h2><p>元素 | 描述</p>
-<ul>
-<li>| - | -<br>　　  a | 超链接或锚点<br>　　  acronym | 首字<br>　　  b | 粗体(不推荐)<br>　　  bdo | 定义文字的方向<br>　　  big | 大字体<br>　　  br | 换行<br>　　  cite | 引用<br>　　  code | 计算机代码(在引用源码的时候需要)<br>　　  dfn | 定义字段<br>　　  em | 强调<br>　　  font | 字体设定(不推荐)<br>　　  i | 斜体<br>　　  img | 图片<br>　　  input | 输入框<br>　　  kbd | 定义键盘文本<br>　　  label | 表格标签<br>　　  q | 短引用<br>　　  s | 中划线(不推荐)<br>　　  samp | 定义范例计算机代码<br>　　  select | 项目选择<br>　　  small | 小字体文本<br>　　  span | 常用内联容器 , 定义文本内区块<br>　　  strike | 中划线<br>　　  strong | 粗体强调<br>　　  sub | 下标<br>　　  sup | 上标<br>　　  textarea | 多行文本输入框<br>　　  tt | 电传文本<br>　　  u | 下划线<br>　　  var | 定义变量<br>abbr | 缩写  </li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/15/元素类型/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </li></ul></div>
     
     
     
