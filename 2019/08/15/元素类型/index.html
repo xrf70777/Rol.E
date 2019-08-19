@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Roland Edgeworth">
 <meta property="og:description" content="一、HTML元素分类根据css显示分类 , HTML元素被分为三种类型:块状元素 , 内联元素 , 可变元素 1.块状元素 ( block element ) 块状元素在网页中就是以块的形式显示 , 所谓块状就是元素显示为矩形区域 , 常用的块状元素包块div,dl,dt,dd,ol,ul,(h1-h6),p,form,hr,table,tr,td等；  默认情况下 , 块状元素都会占据一行 ,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-19T05:07:22.858Z">
+<meta property="og:updated_time" content="2019-08-19T05:10:47.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="元素类型">
 <meta name="twitter:description" content="一、HTML元素分类根据css显示分类 , HTML元素被分为三种类型:块状元素 , 内联元素 , 可变元素 1.块状元素 ( block element ) 块状元素在网页中就是以块的形式显示 , 所谓块状就是元素显示为矩形区域 , 常用的块状元素包块div,dl,dt,dd,ol,ul,(h1-h6),p,form,hr,table,tr,td等；  默认情况下 , 块状元素都会占据一行 ,">
@@ -356,7 +356,54 @@
 </li>
 </ul>
 <h1 id="二、-元素类型的转换"><a href="#二、-元素类型的转换" class="headerlink" title="二、 元素类型的转换"></a>二、 元素类型的转换</h1><p>盒模型可通过display属性来改变元素的类型</p>
-<h2 id="display属性与属性值-常用"><a href="#display属性与属性值-常用" class="headerlink" title="display属性与属性值    (常用)"></a>display属性与属性值    (常用)</h2><p>值 | 描述<br>-|-|-<br>inline | 默认，显示为内联元素，元素前后没有换行符<br>flex | 定义伸缩容器<br>none | 此元素不会被显示<br>block | 显示为块级元素，前后带有换行符<br>inline-block | 元素的内容以块状显示 , 行内的其他元素显示在同一行( 只有这一个元素类型支持vertical-align属性 )<br>table-cell | 此元素会作为一个表格单元格显示<br>list-item | 此元素会作为列表显示<br>run-in | 此元素会根据上下文作为块级元素或内联元素显示<br>table | 此元素会作为块级表格来显示，表格前后带有换行符<br>inline-table | 此元素会作为内联表格来显示，表格前后没有换行符</p>
+<h2 id="display属性与属性值-常用"><a href="#display属性与属性值-常用" class="headerlink" title="display属性与属性值    (常用)"></a>display属性与属性值    (常用)</h2><table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">inline</td>
+<td align="left">默认，显示为内联元素，元素前后没有换行符</td>
+</tr>
+<tr>
+<td align="left">flex</td>
+<td align="left">定义伸缩容器</td>
+</tr>
+<tr>
+<td align="left">none</td>
+<td align="left">此元素不会被显示</td>
+</tr>
+<tr>
+<td align="left">block</td>
+<td align="left">显示为块级元素，前后带有换行符</td>
+</tr>
+<tr>
+<td align="left">inline-block</td>
+<td align="left">元素的内容以块状显示 , 行内的其他元素显示在同一行( 只有这一个元素类型支持vertical-align属性 )</td>
+</tr>
+<tr>
+<td align="left">table-cell</td>
+<td align="left">此元素会作为一个表格单元格显示</td>
+</tr>
+<tr>
+<td align="left">list-item</td>
+<td align="left">此元素会作为列表显示</td>
+</tr>
+<tr>
+<td align="left">run-in</td>
+<td align="left">此元素会根据上下文作为块级元素或内联元素显示</td>
+</tr>
+<tr>
+<td align="left">table</td>
+<td align="left">此元素会作为块级表格来显示，表格前后带有换行符</td>
+</tr>
+<tr>
+<td align="left">inline-table</td>
+<td align="left">此元素会作为内联表格来显示，表格前后没有换行符</td>
+</tr>
+</tbody></table>
 <h3 id="另注："><a href="#另注：" class="headerlink" title="另注："></a>另注：</h3><ul>
 <li>当元素设置了float属性后 , 就相当于给该元素加了display:block;属性</li>
 <li>大部分块元素display属性值默认为block , 其中列表的默认值为list-item。</li>
