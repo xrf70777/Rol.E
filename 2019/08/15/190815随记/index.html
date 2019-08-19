@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Roland Edgeworth">
 <meta property="og:description" content="1.inline-block 垂直不对齐的情况 inline-block 会默认基线对齐，在对容器使用时，因内部文字数量及字号行高不同，可能会影响对齐效果。 解决方案：在类型为 inline-block 的容器上添加 vertical-align: top;  2.动画练习时遇到的问题的解决方案">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-15T11:39:45.064Z">
+<meta property="og:updated_time" content="2019-08-19T09:39:58.735Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="190815随记">
 <meta name="twitter:description" content="1.inline-block 垂直不对齐的情况 inline-block 会默认基线对齐，在对容器使用时，因内部文字数量及字号行高不同，可能会影响对齐效果。 解决方案：在类型为 inline-block 的容器上添加 vertical-align: top;  2.动画练习时遇到的问题的解决方案">
@@ -336,7 +336,7 @@
 <li>解决方案：在类型为 inline-block 的容器上添加 vertical-align: top;</li>
 </ul>
 <h3 id="2-动画练习时遇到的问题的解决方案"><a href="#2-动画练习时遇到的问题的解决方案" class="headerlink" title="2.动画练习时遇到的问题的解决方案"></a>2.动画练习时遇到的问题的解决方案</h3><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@keyframes disappear&#123;</span><br><span class="line">    0%&#123;z-index: 100;&#125;</span><br><span class="line">    100%&#123;z-index: 1;&#125;</span><br><span class="line">&#125;</span><br><span class="line">img:not(:target)&#123;animation: disappear 3s;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> disappear&#123;</span><br><span class="line">    0%&#123;<span class="attribute">z-index</span>: <span class="number">100</span>;&#125;</span><br><span class="line">    100%&#123;<span class="attribute">z-index</span>: <span class="number">1</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">img</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:target)</span>&#123;<span class="attribute">animation</span>: disappear <span class="number">3s</span>;&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="3-经常忘记的属性"><a href="#3-经常忘记的属性" class="headerlink" title="3.经常忘记的属性"></a>3.经常忘记的属性</h3><ul>
 <li>文本倾斜  font-style: italic</li>
