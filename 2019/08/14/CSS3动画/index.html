@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Roland Edgeworth">
 <meta property="og:description" content="一  渐变  IE10+线性渐变linear-gradient1background-image: linear-gradient(方向，起始颜色，结束颜色)  处理兼容12345background-image: -webkit-linear-gradient(to top, red, yellow);background-image: -moz-linear-gradient(to top,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-15T11:37:04.488Z">
+<meta property="og:updated_time" content="2019-08-19T05:24:46.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3 动画">
 <meta name="twitter:description" content="一  渐变  IE10+线性渐变linear-gradient1background-image: linear-gradient(方向，起始颜色，结束颜色)  处理兼容12345background-image: -webkit-linear-gradient(to top, red, yellow);background-image: -moz-linear-gradient(to top,">
@@ -348,16 +348,64 @@
 
 <h2 id="重复径向渐变"><a href="#重复径向渐变" class="headerlink" title="重复径向渐变"></a>重复径向渐变</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">background-image: repeating-radial-gradient(</span><br><span class="line">	to top,</span><br><span class="line">	rgba(255, 206, 0, .5) 40px,</span><br><span class="line">	rgba(255, 255, 0, .4) 80px</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
-<h1 id="二-过渡-IE10"><a href="#二-过渡-IE10" class="headerlink" title="二  过渡  IE10+"></a>二  过渡  IE10+</h1><h2 id="transition"><a href="#transition" class="headerlink" title="transition:"></a>transition:</h2><p>属性 | 意义</p>
-<ul>
-<li>| - | -<br>transition-property | 过渡属性<br>transition-delay | 过渡延迟时间<br>transition-duration | 过渡所需时间<br>transition-timing-function | 过渡动画函数</li>
-</ul>
+<h1 id="二-过渡-IE10"><a href="#二-过渡-IE10" class="headerlink" title="二  过渡  IE10+"></a>二  过渡  IE10+</h1><h2 id="transition"><a href="#transition" class="headerlink" title="transition:"></a>transition:</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">transition-property</td>
+<td align="left">过渡属性</td>
+</tr>
+<tr>
+<td align="left">transition-delay</td>
+<td align="left">过渡延迟时间</td>
+</tr>
+<tr>
+<td align="left">transition-duration</td>
+<td align="left">过渡所需时间</td>
+</tr>
+<tr>
+<td align="left">transition-timing-function</td>
+<td align="left">过渡动画函数</td>
+</tr>
+</tbody></table>
 <h3 id="各个属性可以分开写，一次可以过渡多个属性"><a href="#各个属性可以分开写，一次可以过渡多个属性" class="headerlink" title="各个属性可以分开写，一次可以过渡多个属性"></a>各个属性可以分开写，一次可以过渡多个属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">-webkit-transition-property:background, width, height;</span><br><span class="line">-webkit-transition-duration:1s, 1s, 1s;</span><br><span class="line">-webkit-transition-timing-function:linear, linear, linear;</span><br><span class="line">-webkit-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">-moz-transition-property:background, width, height;</span><br><span class="line">-moz-transition-duration:1s, 1s, 1s;</span><br><span class="line">-moz-transition-timing-function:linear, linear, linear;</span><br><span class="line">-moz-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">-ms-transition-property:background, width, height;</span><br><span class="line">-ms-transition-duration:1s,1s,1s;</span><br><span class="line">-ms-transition-timing-function:linear, linear, linear;</span><br><span class="line">-ms-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">-o-transition-property:background, width, height;</span><br><span class="line">-o-transition-duration:1s, 1s, 1s;</span><br><span class="line">-o-transition-timing-function:linear, linear, linear;</span><br><span class="line">-o-transition-delay:1s, 0s, 2s;</span><br><span class="line"></span><br><span class="line">transition-property:background, width, height;</span><br><span class="line">transition-duration:1s, 1s, 1s;</span><br><span class="line">transition-timing-function:linear, linear, linear;</span><br><span class="line">transition-delay:1s, 0s, 2s;</span><br></pre></td></tr></table></figure>
 
-<h2 id="注：过渡动画函数-timing-function"><a href="#注：过渡动画函数-timing-function" class="headerlink" title="注：过渡动画函数 timing-function"></a>注：过渡动画函数 timing-function</h2><p>属性值 | 效果</p>
-<ul>
-<li>| - | -<br>ease | 先快后慢，逐渐变慢<br>linear | 匀速<br>ease-in | 速度越来越快，称为渐显效果<br>ease-out | 速度越来越慢，称为渐隐效果<br>ease-in-out | 先加速再减速，称为渐显渐隐效果<br>cubic-bezier( .61, .17, .92, .1 ) | 三次贝塞尔曲线</li>
-</ul>
+<h2 id="注：过渡动画函数-timing-function"><a href="#注：过渡动画函数-timing-function" class="headerlink" title="注：过渡动画函数 timing-function"></a>注：过渡动画函数 timing-function</h2><table>
+<thead>
+<tr>
+<th align="left">属性值</th>
+<th align="left">效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">ease</td>
+<td align="left">先快后慢，逐渐变慢</td>
+</tr>
+<tr>
+<td align="left">linear</td>
+<td align="left">匀速</td>
+</tr>
+<tr>
+<td align="left">ease-in</td>
+<td align="left">速度越来越快，称为渐显效果</td>
+</tr>
+<tr>
+<td align="left">ease-out</td>
+<td align="left">速度越来越慢，称为渐隐效果</td>
+</tr>
+<tr>
+<td align="left">ease-in-out</td>
+<td align="left">先加速再减速，称为渐显渐隐效果</td>
+</tr>
+<tr>
+<td align="left">cubic-bezier( .61, .17, .92, .1 )</td>
+<td align="left">三次贝塞尔曲线</td>
+</tr>
+</tbody></table>
 <h1 id="三-变形-transform"><a href="#三-变形-transform" class="headerlink" title="三 变形 transform"></a>三 变形 transform</h1><h2 id="2D变形-transform-function"><a href="#2D变形-transform-function" class="headerlink" title="2D变形 transform-function"></a>2D变形 transform-function</h2><p>###</p>
 <table>
 <thead>
@@ -401,15 +449,107 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-webkit-perspective: 1200px;</span><br><span class="line">-moz-perspective: 1200px;</span><br><span class="line">-ms-perspective: 1200px;</span><br><span class="line">perspective: 1200px;</span><br></pre></td></tr></table></figure>
 
 <p>perspective的两种书写方式<br>perspective:1200px;<br>transform:perspective(1200px) </p>
-<p>属性 | 描述</p>
-<ul>
-<li>| - | -<br>transform: translate3d(x,y,z) | 3D位移<br>transform:translateX() | X轴位移<br>transform:translateY() | Y轴位移<br>transform:translateZ() | Z轴位移<br>transform: rotate3d(x, y, z, deg) | 3D旋转<br>transform: rotateX() | X轴旋转<br>transform: rotateY() | Y轴旋转<br>transform: rotateZ() | Z轴旋转<br>transform: scale3d() | 3D缩放，不能自己单独使用，需要配合其他变形一起使用才会有效果<br>transform: scaleX() | X轴缩放<br>transform: scaleY() | Y轴缩放<br>transform: scaleZ() | Z轴缩放<h1 id="五-CSS3动画"><a href="#五-CSS3动画" class="headerlink" title="五  CSS3动画"></a>五  CSS3动画</h1></li>
-</ul>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">transform: translate3d(x,y,z)</td>
+<td align="left">3D位移</td>
+</tr>
+<tr>
+<td align="left">transform:translateX()</td>
+<td align="left">X轴位移</td>
+</tr>
+<tr>
+<td align="left">transform:translateY()</td>
+<td align="left">Y轴位移</td>
+</tr>
+<tr>
+<td align="left">transform:translateZ()</td>
+<td align="left">Z轴位移</td>
+</tr>
+<tr>
+<td align="left">transform: rotate3d(x, y, z, deg)</td>
+<td align="left">3D旋转</td>
+</tr>
+<tr>
+<td align="left">transform: rotateX()</td>
+<td align="left">X轴旋转</td>
+</tr>
+<tr>
+<td align="left">transform: rotateY()</td>
+<td align="left">Y轴旋转</td>
+</tr>
+<tr>
+<td align="left">transform: rotateZ()</td>
+<td align="left">Z轴旋转</td>
+</tr>
+<tr>
+<td align="left">transform: scale3d()</td>
+<td align="left">3D缩放，不能自己单独使用，需要配合其他变形一起使用才会有效果</td>
+</tr>
+<tr>
+<td align="left">transform: scaleX()</td>
+<td align="left">X轴缩放</td>
+</tr>
+<tr>
+<td align="left">transform: scaleY()</td>
+<td align="left">Y轴缩放</td>
+</tr>
+<tr>
+<td align="left">transform: scaleZ()</td>
+<td align="left">Z轴缩放</td>
+</tr>
+<tr>
+<td align="left"># 五  CSS3动画</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
 <h2 id="相关动画属性"><a href="#相关动画属性" class="headerlink" title="相关动画属性"></a>相关动画属性</h2><p>animation: 动画名称  动画所需时间  动画播放方式  动画开始时间  循环次数  播放方向  </p>
-<p>属性 | 描述</p>
-<ul>
-<li>| - | -<br>animation-name | 动画名称—-声明的动画名称<br>animation-duration | 所需时间—-完成0%-100%动画所需时间<br>animation-timing-function | 播放方式—-同过渡<br>step-start | 阻止帧与帧之间的过渡，瞬间切换到下一帧<br>animation-delay | 延迟播放的时间<br>animation-iteration-count | 循环次数—-默认为1，infinite为无限循环播放<br>animation-direction | 播放方向—-默认normal，向前播放  alternate，播放次数为偶数则向前播放，为奇数时向反方向播放<br>animation-play-state | 动画状态  running 动起来  paused暂停</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">animation-name</td>
+<td align="left">动画名称—-声明的动画名称</td>
+</tr>
+<tr>
+<td align="left">animation-duration</td>
+<td align="left">所需时间—-完成0%-100%动画所需时间</td>
+</tr>
+<tr>
+<td align="left">animation-timing-function</td>
+<td align="left">播放方式—-同过渡</td>
+</tr>
+<tr>
+<td align="left">step-start</td>
+<td align="left">阻止帧与帧之间的过渡，瞬间切换到下一帧</td>
+</tr>
+<tr>
+<td align="left">animation-delay</td>
+<td align="left">延迟播放的时间</td>
+</tr>
+<tr>
+<td align="left">animation-iteration-count</td>
+<td align="left">循环次数—-默认为1，infinite为无限循环播放</td>
+</tr>
+<tr>
+<td align="left">animation-direction</td>
+<td align="left">播放方向—-默认normal，向前播放  alternate，播放次数为偶数则向前播放，为奇数时向反方向播放</td>
+</tr>
+<tr>
+<td align="left">animation-play-state</td>
+<td align="left">动画状态  running 动起来  paused暂停</td>
+</tr>
+</tbody></table>
 <h2 id="关键帧声明动画-keyframes"><a href="#关键帧声明动画-keyframes" class="headerlink" title="关键帧声明动画 @keyframes"></a>关键帧声明动画 @keyframes</h2><p>@keyframes name{<br>    from{<br>        css样式;<br>    }<br>    percentage{<br>        css样式;<br>    }<br>    to{<br>        css样式;<br>    }<br>}</p>
 <p>@keyframes name{<br>    0%{<br>        css样式;<br>    }<br>    percentage{<br>        css样式;<br>    }<br>    100%{<br>        css样式;<br>    }<br>}</p>
 <h3 id="调用-keyframes声明的动画"><a href="#调用-keyframes声明的动画" class="headerlink" title="调用@keyframes声明的动画"></a>调用@keyframes声明的动画</h3><p>animation:run 1s infinite alternate ;</p>
@@ -568,7 +708,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-渐变-IE10"><span class="nav-number">1.</span> <span class="nav-text">一  渐变  IE10+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性渐变linear-gradient"><span class="nav-number">1.1.</span> <span class="nav-text">线性渐变linear-gradient</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理兼容"><span class="nav-number">1.2.</span> <span class="nav-text">处理兼容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方向可以使用角度-30deg-也可以使用关键字-to-right等"><span class="nav-number">1.3.</span> <span class="nav-text">方向可以使用角度 (30deg) 也可以使用关键字 (to right等)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多色线性渐变，只需在后面添加更多的颜色即可"><span class="nav-number">1.4.</span> <span class="nav-text">多色线性渐变，只需在后面添加更多的颜色即可</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义线性渐变"><span class="nav-number">1.5.</span> <span class="nav-text">自定义线性渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复线性渐变"><span class="nav-number">1.6.</span> <span class="nav-text">重复线性渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#径向渐变radial-gradient"><span class="nav-number">1.7.</span> <span class="nav-text">径向渐变radial-gradient</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复径向渐变"><span class="nav-number">1.8.</span> <span class="nav-text">重复径向渐变</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-过渡-IE10"><span class="nav-number">2.</span> <span class="nav-text">二  过渡  IE10+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#transition"><span class="nav-number">2.1.</span> <span class="nav-text">transition:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#各个属性可以分开写，一次可以过渡多个属性"><span class="nav-number">2.1.1.</span> <span class="nav-text">各个属性可以分开写，一次可以过渡多个属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注：过渡动画函数-timing-function"><span class="nav-number">2.2.</span> <span class="nav-text">注：过渡动画函数 timing-function</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-变形-transform"><span class="nav-number">3.</span> <span class="nav-text">三 变形 transform</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2D变形-transform-function"><span class="nav-number">3.1.</span> <span class="nav-text">2D变形 transform-function</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#transform-origin-指定元素的中心点位置"><span class="nav-number">3.1.1.</span> <span class="nav-text">transform-origin 指定元素的中心点位置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-3D-变形"><span class="nav-number">4.</span> <span class="nav-text">四 3D 变形</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器支持情况"><span class="nav-number">4.1.</span> <span class="nav-text">浏览器支持情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变形类型-transform-style-preserve-3d"><span class="nav-number">4.2.</span> <span class="nav-text">变形类型 transform-style: preserve-3d</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#perspective：透视，视角，景深"><span class="nav-number">4.3.</span> <span class="nav-text">perspective：透视，视角，景深</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五-CSS3动画"><span class="nav-number">5.</span> <span class="nav-text">五  CSS3动画</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#相关动画属性"><span class="nav-number">5.1.</span> <span class="nav-text">相关动画属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关键帧声明动画-keyframes"><span class="nav-number">5.2.</span> <span class="nav-text">关键帧声明动画 @keyframes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用-keyframes声明的动画"><span class="nav-number">5.2.1.</span> <span class="nav-text">调用@keyframes声明的动画</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-渐变-IE10"><span class="nav-number">1.</span> <span class="nav-text">一  渐变  IE10+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性渐变linear-gradient"><span class="nav-number">1.1.</span> <span class="nav-text">线性渐变linear-gradient</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理兼容"><span class="nav-number">1.2.</span> <span class="nav-text">处理兼容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方向可以使用角度-30deg-也可以使用关键字-to-right等"><span class="nav-number">1.3.</span> <span class="nav-text">方向可以使用角度 (30deg) 也可以使用关键字 (to right等)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多色线性渐变，只需在后面添加更多的颜色即可"><span class="nav-number">1.4.</span> <span class="nav-text">多色线性渐变，只需在后面添加更多的颜色即可</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义线性渐变"><span class="nav-number">1.5.</span> <span class="nav-text">自定义线性渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复线性渐变"><span class="nav-number">1.6.</span> <span class="nav-text">重复线性渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#径向渐变radial-gradient"><span class="nav-number">1.7.</span> <span class="nav-text">径向渐变radial-gradient</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复径向渐变"><span class="nav-number">1.8.</span> <span class="nav-text">重复径向渐变</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-过渡-IE10"><span class="nav-number">2.</span> <span class="nav-text">二  过渡  IE10+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#transition"><span class="nav-number">2.1.</span> <span class="nav-text">transition:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#各个属性可以分开写，一次可以过渡多个属性"><span class="nav-number">2.1.1.</span> <span class="nav-text">各个属性可以分开写，一次可以过渡多个属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注：过渡动画函数-timing-function"><span class="nav-number">2.2.</span> <span class="nav-text">注：过渡动画函数 timing-function</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-变形-transform"><span class="nav-number">3.</span> <span class="nav-text">三 变形 transform</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2D变形-transform-function"><span class="nav-number">3.1.</span> <span class="nav-text">2D变形 transform-function</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#transform-origin-指定元素的中心点位置"><span class="nav-number">3.1.1.</span> <span class="nav-text">transform-origin 指定元素的中心点位置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-3D-变形"><span class="nav-number">4.</span> <span class="nav-text">四 3D 变形</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器支持情况"><span class="nav-number">4.1.</span> <span class="nav-text">浏览器支持情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变形类型-transform-style-preserve-3d"><span class="nav-number">4.2.</span> <span class="nav-text">变形类型 transform-style: preserve-3d</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#perspective：透视，视角，景深"><span class="nav-number">4.3.</span> <span class="nav-text">perspective：透视，视角，景深</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关动画属性"><span class="nav-number">4.4.</span> <span class="nav-text">相关动画属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关键帧声明动画-keyframes"><span class="nav-number">4.5.</span> <span class="nav-text">关键帧声明动画 @keyframes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用-keyframes声明的动画"><span class="nav-number">4.5.1.</span> <span class="nav-text">调用@keyframes声明的动画</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
