@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Roland Edgeworth">
 <meta property="og:description" content="显式转换parseInt() &amp;amp; parseFloat()1234567891011parseInt(&quot;1234blue&quot;); //returns 1234parseInt(&quot;0xA&quot;); //returns 10parseInt(&quot;22.5&quot;); //returns 22parseInt(&quot;blue&quot;); //returns NaNparseFloat(&quot;1234blue&quot;); //re">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-19T12:53:06.007Z">
+<meta property="og:updated_time" content="2019-08-19T13:02:05.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS 显式类型转换">
 <meta name="twitter:description" content="显式转换parseInt() &amp;amp; parseFloat()1234567891011parseInt(&quot;1234blue&quot;); //returns 1234parseInt(&quot;0xA&quot;); //returns 10parseInt(&quot;22.5&quot;); //returns 22parseInt(&quot;blue&quot;); //returns NaNparseFloat(&quot;1234blue&quot;); //re">
@@ -355,7 +355,7 @@
 </li>
 <li>如果是对象，则调用对象的valueOf()方法，然后依据前面的规则转换返回的值。如果转换的结果是NaN，则调用对象的toString()方法，再次依照前面的规则转换返回的字符串值</li>
 </ul>
-<h2 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a>toString()</h2><p>除undefined和null之外的所有类型的值都具有toString()方法，其作用是返回对象的字符串表示<br>对象|操作<br>:———-|:———-<br>Array|将 Array 的元素转换为字符串。结果字符串由逗号分隔，且连接起来。<br>Boolean|如果 Boolean 值是 true，则返回 “true”。否则，返回 “false”。<br>Date|返回日期的文字表示法。<br>Error|返回一个包含相关错误信息的字符串。<br>Function|返回如下格式的字符串，其中 functionname 是被调用 toString 方法函数的名称：function functionname( ) { [native code] }<br>Number|返回数字的文字表示。<br>String|返回 String 对象的值。<br>默认|返回 “[object objectname]”，其中 objectname 是对象类型的名称。</p>
+<h2 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a>toString()</h2><p>除undefined和null之外的所有类型的值都具有toString()方法，其作用是返回对象的字符串表示<br>对象 | 操作<br>:—– | :—–<br>Array | 将 Array 的元素转换为字符串。结果字符串由逗号分隔，且连接起来。<br>Boolean | 如果 Boolean 值是 true，则返回 “true”。否则，返回 “false”。<br>Date | 返回日期的文字表示法。<br>Error | 返回一个包含相关错误信息的字符串。<br>Function | 返回如下格式的字符串，其中 functionname 是被调用 toString 方法函数的名称：function functionname( ) { [native code] }<br>Number | 返回数字的文字表示。<br>String | 返回 String 对象的值。<br>默认 | 返回 “[object objectname]”，其中 objectname 是对象类型的名称。</p>
 <h2 id="String"><a href="#String" class="headerlink" title="String()"></a>String()</h2><p>将任何类型的值转换为字符串  </p>
 <ul>
 <li>如果有toString()方法，则调用该方法（不传递radix参数）并返回结果</li>
