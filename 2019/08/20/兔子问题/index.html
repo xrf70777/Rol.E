@@ -79,17 +79,19 @@
 
 
 
-<meta name="description" content="JS 变量类型 一. 基本类型 undefined(未定义, 未初始化变量的默认值) Null(空, 空指针, 空的引用) Boolean(布尔值, 有且仅有两个值, true/false, 对于真与假, 1与0) String(字符串) Number (整数, 浮点数, Infinity, NaN)5.1 整数5.2 浮点数 浮点数数值中必须包括小数点，且小数点后至少要有一个数字5.1 Infi">
+<meta name="description" content="兔子问题(斐波那契数列)总结问 : 兔子在出生两个月后成熟 , 一对成熟兔子在出生后第三个月后每个月能生出一对小兔子 , 假设, 第一个月有一对刚出生的兔子 , 如果所有兔子都不死 , 那么一年以后可以繁殖多少对兔子">
 <meta property="og:type" content="article">
-<meta property="og:title" content="变量类型">
-<meta property="og:url" content="http://yoursite.com/2019/08/19/变量类型/index.html">
+<meta property="og:title" content="兔子问题">
+<meta property="og:url" content="http://yoursite.com/2019/08/20/兔子问题/index.html">
 <meta property="og:site_name" content="Roland Edgeworth">
-<meta property="og:description" content="JS 变量类型 一. 基本类型 undefined(未定义, 未初始化变量的默认值) Null(空, 空指针, 空的引用) Boolean(布尔值, 有且仅有两个值, true/false, 对于真与假, 1与0) String(字符串) Number (整数, 浮点数, Infinity, NaN)5.1 整数5.2 浮点数 浮点数数值中必须包括小数点，且小数点后至少要有一个数字5.1 Infi">
+<meta property="og:description" content="兔子问题(斐波那契数列)总结问 : 兔子在出生两个月后成熟 , 一对成熟兔子在出生后第三个月后每个月能生出一对小兔子 , 假设, 第一个月有一对刚出生的兔子 , 如果所有兔子都不死 , 那么一年以后可以繁殖多少对兔子">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-19T03:58:58.926Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/08/20/mJqHJ0.jpg">
+<meta property="og:updated_time" content="2019-08-20T11:34:09.254Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="变量类型">
-<meta name="twitter:description" content="JS 变量类型 一. 基本类型 undefined(未定义, 未初始化变量的默认值) Null(空, 空指针, 空的引用) Boolean(布尔值, 有且仅有两个值, true/false, 对于真与假, 1与0) String(字符串) Number (整数, 浮点数, Infinity, NaN)5.1 整数5.2 浮点数 浮点数数值中必须包括小数点，且小数点后至少要有一个数字5.1 Infi">
+<meta name="twitter:title" content="兔子问题">
+<meta name="twitter:description" content="兔子问题(斐波那契数列)总结问 : 兔子在出生两个月后成熟 , 一对成熟兔子在出生后第三个月后每个月能生出一对小兔子 , 假设, 第一个月有一对刚出生的兔子 , 如果所有兔子都不死 , 那么一年以后可以繁殖多少对兔子">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/08/20/mJqHJ0.jpg">
 
 
 
@@ -119,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/19/变量类型/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/20/兔子问题/">
 
 
 
 
 
-  <title>变量类型 | Roland Edgeworth</title>
+  <title>兔子问题 | Roland Edgeworth</title>
   
 
 
@@ -264,7 +266,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/19/变量类型/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/20/兔子问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Rol E">
@@ -281,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">变量类型</h1>
+          <h1 class="post-title" itemprop="name headline">兔子问题</h1>
         
 
         <div class="post-meta">
@@ -293,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-19T12:00:09+08:00">
-                2019-08-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T17:27:05+08:00">
+                2019-08-20
               </time>
             
 
@@ -331,18 +333,24 @@
       
 
       
-        <p>JS 变量类型</p>
-<h2 id="一-基本类型"><a href="#一-基本类型" class="headerlink" title="一. 基本类型"></a>一. 基本类型</h2><ol>
-<li>undefined(未定义, 未初始化变量的默认值)</li>
-<li>Null(空, 空指针, 空的引用)</li>
-<li>Boolean(布尔值, 有且仅有两个值, true/false, 对于真与假, 1与0)</li>
-<li>String(字符串)</li>
-<li>Number (整数, 浮点数, Infinity, NaN)<br>5.1 整数<br>5.2 浮点数 浮点数数值中必须包括小数点，且小数点后至少要有一个数字<br>5.1 Infinity, 无限大<br>5.2 NaN Not a Number, 非数字类型<h2 id="二-引用类型-复杂类型"><a href="#二-引用类型-复杂类型" class="headerlink" title="二. 引用类型(复杂类型)"></a>二. 引用类型(复杂类型)</h2></li>
-</ol>
-<ul>
-<li>Object(对象)<br>+ </li>
-</ul>
+        <h1 id="兔子问题-斐波那契数列-总结"><a href="#兔子问题-斐波那契数列-总结" class="headerlink" title="兔子问题(斐波那契数列)总结"></a>兔子问题(斐波那契数列)总结</h1><p>问 : 兔子在出生两个月后成熟 , 一对成熟兔子在出生后第三个月后每个月能生出一对小兔子 , 假设, 第一个月有一对刚出生的兔子 , 如果所有兔子都不死 , 那么一年以后可以繁殖多少对兔子  </p>
+<img src="https://s2.ax1x.com/2019/08/20/mJqHJ0.jpg" width="400" alt="图片名称" align="center">
+<a id="more"></a>  
 
+<p>由题可知,在最初的两个月中 , 兔子的总数保持不变 , 从第三个月开始 , 开始出现新生的兔子  </p>
+<p><font color="#f90">本月新生兔子的数量</font> = 出生达到第三个月的兔子数量</p>
+<p>即</p>
+<p><font color="#f90">本月新生兔子的数量</font> = <font color="#06f"> 两个月之前出生的兔子数量 + 三个月前的兔子总数</font></p>
+<p>而<font color="#06f"> “ 两个月之前出生的兔子数量 + 三个月前的兔子总数 “ </font>所得到的值 , 等于<font color="#60f">两个月前的兔子总数</font></p>
+<p>那么 , 我们可以得到以下结论  </p>
+<p>在兔子不死的前提下 , <font color="#f90">本月新生的兔子数量</font> , 等于<font color="#60f">两个月前的兔子总数</font></p>
+<p>又有当前兔子总数 = <font color="#090">上月兔子总数</font> + <font color="#f90">本月新生的兔子数量</font></p>
+<p>由此可知 , 本月兔子总数 , 等于<font color="#090">上月兔子总数</font> + <font color="#60f">两个月前的兔子总数</font></p>
+<p><font color="#090">上月兔子总数</font> + <font color="#60f">两个月前的兔子总数</font> = ( 两个月前兔子总数 + 三个月前兔子总数 ) + ( 三个月前兔子总数 + 四个月前兔子总数 )</p>
+<p>以此类推</p>
+<p>到这里 , 最困难的逻辑整理部分已经完成</p>
+<p>以下为我的解决方案 , 利用了递归调用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">rabbit</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">2</span>)&#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;</span><br><span class="line">    <span class="keyword">return</span> rabbit(n<span class="number">-1</span>)+rabbit(n<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -371,8 +379,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/17/单行文本超出部分隐藏为省略号/" rel="next" title="单行文本超出部分隐藏为省略号">
-                <i class="fa fa-chevron-left"></i> 单行文本超出部分隐藏为省略号
+              <a href="/2019/08/19/隐式类型转换/" rel="next" title="隐式类型转换">
+                <i class="fa fa-chevron-left"></i> 隐式类型转换
               </a>
             
           </div>
@@ -456,7 +464,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -493,7 +501,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-基本类型"><span class="nav-number">1.</span> <span class="nav-text">一. 基本类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-引用类型-复杂类型"><span class="nav-number">2.</span> <span class="nav-text">二. 引用类型(复杂类型)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#兔子问题-斐波那契数列-总结"><span class="nav-number">1.</span> <span class="nav-text">兔子问题(斐波那契数列)总结</span></a></li></ol></div>
             
 
           </div>

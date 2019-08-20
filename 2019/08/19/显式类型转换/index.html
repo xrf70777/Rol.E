@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="显式转换parseInt() &amp;amp; parseFloat()1234567891011parseInt(&quot;1234blue&quot;); //returns 1234parseInt(&quot;0xA&quot;); //returns 10parseInt(&quot;22.5&quot;); //returns 22parseInt(&quot;blue&quot;); //returns NaNparseFloat(&quot;1234blue&quot;); //re">
+<meta name="description" content="显式转换parseInt() &amp;amp; parseFloat()123456789101112parseInt(&quot;1234blue&quot;);   //returns 1234parseInt(&quot;0xA&quot;);        //returns 10parseInt(&quot;  22.5&quot;);     //returns 22parseInt(&quot;22   5&quot;);     //returns 22parseI">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS 显式类型转换">
 <meta property="og:url" content="http://yoursite.com/2019/08/19/显式类型转换/index.html">
 <meta property="og:site_name" content="Roland Edgeworth">
-<meta property="og:description" content="显式转换parseInt() &amp;amp; parseFloat()1234567891011parseInt(&quot;1234blue&quot;); //returns 1234parseInt(&quot;0xA&quot;); //returns 10parseInt(&quot;22.5&quot;); //returns 22parseInt(&quot;blue&quot;); //returns NaNparseFloat(&quot;1234blue&quot;); //re">
+<meta property="og:description" content="显式转换parseInt() &amp;amp; parseFloat()123456789101112parseInt(&quot;1234blue&quot;);   //returns 1234parseInt(&quot;0xA&quot;);        //returns 10parseInt(&quot;  22.5&quot;);     //returns 22parseInt(&quot;22   5&quot;);     //returns 22parseI">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-19T13:08:24.580Z">
+<meta property="og:updated_time" content="2019-08-20T01:42:14.953Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS 显式类型转换">
-<meta name="twitter:description" content="显式转换parseInt() &amp;amp; parseFloat()1234567891011parseInt(&quot;1234blue&quot;); //returns 1234parseInt(&quot;0xA&quot;); //returns 10parseInt(&quot;22.5&quot;); //returns 22parseInt(&quot;blue&quot;); //returns NaNparseFloat(&quot;1234blue&quot;); //re">
+<meta name="twitter:description" content="显式转换parseInt() &amp;amp; parseFloat()123456789101112parseInt(&quot;1234blue&quot;);   //returns 1234parseInt(&quot;0xA&quot;);        //returns 10parseInt(&quot;  22.5&quot;);     //returns 22parseInt(&quot;22   5&quot;);     //returns 22parseI">
 
 
 
@@ -331,31 +331,33 @@
       
 
       
-        <h1 id="显式转换"><a href="#显式转换" class="headerlink" title="显式转换"></a>显式转换</h1><h2 id="parseInt-amp-parseFloat"><a href="#parseInt-amp-parseFloat" class="headerlink" title="parseInt() &amp; parseFloat()"></a>parseInt() &amp; parseFloat()</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">"1234blue"</span>); <span class="comment">//returns 1234</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"0xA"</span>); <span class="comment">//returns 10</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"22.5"</span>); <span class="comment">//returns 22</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"blue"</span>); <span class="comment">//returns NaN</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"1234blue"</span>); <span class="comment">//returns 1234.0</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"0xA"</span>); <span class="comment">//returns NaN</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"22.5"</span>); <span class="comment">//returns 22.5</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"22.34.5"</span>); <span class="comment">//returns 22.34</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"0908"</span>); <span class="comment">//returns 908</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"blue"</span>); <span class="comment">//returns NaN</span></span><br></pre></td></tr></table></figure>
+        <h1 id="显式转换"><a href="#显式转换" class="headerlink" title="显式转换"></a>显式转换</h1><h2 id="parseInt-amp-parseFloat"><a href="#parseInt-amp-parseFloat" class="headerlink" title="parseInt() &amp; parseFloat()"></a>parseInt() &amp; parseFloat()</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">"1234blue"</span>);   <span class="comment">//returns 1234</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"0xA"</span>);        <span class="comment">//returns 10</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"  22.5"</span>);     <span class="comment">//returns 22</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"22   5"</span>);     <span class="comment">//returns 22</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"blue"</span>);       <span class="comment">//returns NaN</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"1234blue"</span>); <span class="comment">//returns 1234.0</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"0xA"</span>);      <span class="comment">//returns NaN</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"  22.5  "</span>); <span class="comment">//returns 22.5</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"22.34.5"</span>);  <span class="comment">//returns 22.34</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"0908"</span>);     <span class="comment">//returns 908</span></span><br><span class="line"><span class="built_in">parseFloat</span>(<span class="string">"blue"</span>);     <span class="comment">//returns NaN</span></span><br></pre></td></tr></table></figure>
 
-<p>parseInt() 把值转换成整数，parseFloat() 把值转换成浮点数</p>
+<p>parse  意为 “解析”<br>parseInt() 将值转换成整数, parseFloat() 将值转换成浮点数</p>
 <a id="more"></a>
-<h4 id="这两个函数只能对-String-类型使用-其他类型会返回-NaN"><a href="#这两个函数只能对-String-类型使用-其他类型会返回-NaN" class="headerlink" title="这两个函数只能对 String 类型使用,其他类型会返回 NaN"></a>这两个函数只能对 String 类型使用,其他类型会返回 NaN</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">"AF"</span>, <span class="number">16</span>); <span class="comment">//returns 175</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"10"</span>, <span class="number">2</span>); <span class="comment">//returns 2</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"10"</span>, <span class="number">8</span>); <span class="comment">//returns 8</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"10"</span>, <span class="number">10</span>); <span class="comment">//returns 10</span></span><br></pre></td></tr></table></figure>
+<h4 id="这两个函数只能对-String-类型使用-其他类型会返回-NaN"><a href="#这两个函数只能对-String-类型使用-其他类型会返回-NaN" class="headerlink" title="这两个函数只能对 String 类型使用,其他类型会返回 NaN"></a>这两个函数只能对 String 类型使用,其他类型会返回 NaN</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">"AF"</span>, <span class="number">16</span>);     <span class="comment">//returns 175</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"10"</span>, <span class="number">2</span>);      <span class="comment">//returns 2</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"10"</span>, <span class="number">8</span>);      <span class="comment">//returns 8</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"10"</span>, <span class="number">10</span>);     <span class="comment">//returns 10</span></span><br></pre></td></tr></table></figure>
 
 <p>parsrInt() 可以进行进制转换, 将16进制, 8进制, 2进制或其他进制的字符串转换为整数, 进制由方法的第二个参数指定</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">"010"</span>); <span class="comment">//returns 8</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"010"</span>, <span class="number">8</span>); <span class="comment">//returns 8</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"010"</span>, <span class="number">10</span>); <span class="comment">//returns 10</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(<span class="string">"010"</span>);        <span class="comment">//returns 8</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"010"</span>, <span class="number">8</span>);     <span class="comment">//returns 8</span></span><br><span class="line"><span class="built_in">parseInt</span>(<span class="string">"010"</span>, <span class="number">10</span>);    <span class="comment">//returns 10</span></span><br></pre></td></tr></table></figure>
 
-<p>如果十进制数包含前导0，那么最好指明第二个参数为10，这样才不会意外地得到八进制的值</p>
-<h2 id="Number"><a href="#Number" class="headerlink" title="Number()"></a>Number()</h2><h4 id="可以将任意类型的参数mix转换为数值类型"><a href="#可以将任意类型的参数mix转换为数值类型" class="headerlink" title="可以将任意类型的参数mix转换为数值类型"></a>可以将任意类型的参数mix转换为数值类型</h4><p>如果是布尔值，true和false分别被转换为1和0  </p>
+<p>如果十进制数包含前导0, 那么最好指明第二个参数为10, 这样才不会意外地得到八进制的值</p>
+<h2 id="window-Number"><a href="#window-Number" class="headerlink" title="window.Number()"></a>window.Number()</h2><h4 id="可以将任意类型的参数mix转换为数值类型"><a href="#可以将任意类型的参数mix转换为数值类型" class="headerlink" title="可以将任意类型的参数mix转换为数值类型"></a>可以将任意类型的参数mix转换为数值类型</h4><p>如果是布尔值, true和false分别被转换为1和0  </p>
 <ul>
-<li>如果是数字值，返回本身</li>
-<li>如果是null，返回0   </li>
-<li>如果是undefined，返回NaN   </li>
-<li>如果是字符串，遵循以下规则   <ul>
-<li>如果字符串中只包含数字，则将其转换为十进制（忽略前导0）</li>
-<li>如果字符串中包含有效的浮点格式，将其转换为浮点数值（忽略前导0）</li>
-<li>如果是空字符串，将其转换为0</li>
-<li>如果字符串中无以上格式，则将其转换为NaN</li>
+<li>如果是数字值, 返回本身</li>
+<li>如果是null, 返回0   </li>
+<li>如果是undefined, 返回NaN   </li>
+<li>如果是字符串, 遵循以下规则   <ul>
+<li>如果字符串中只包含数字, 则将其转换为十进制 ( 忽略前导 0 )</li>
+<li>如果字符串中包含有效的浮点格式, 将其转换为浮点数值 ( 忽略前导 0 )</li>
+<li>如果是空字符串, 返回 0</li>
+<li>如果字符串中无以上格式, 则将其转换为NaN</li>
 </ul>
 </li>
-<li>如果是对象，则调用对象的valueOf()方法，然后依据前面的规则转换返回的值。如果转换的结果是NaN，则调用对象的toString()方法，再次依照前面的规则转换返回的字符串值</li>
+<li>如果是对象, 则调用对象的valueOf()方法, 然后依据前面的规则转换返回的值。如果转换的结果是NaN, 则调用对象的toString()方法, 再次依照前面的规则转换返回的字符串值<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(<span class="literal">null</span>)         <span class="comment">//0</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">undefined</span>)    <span class="comment">//NaN</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">true</span>)         <span class="comment">//1</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">false</span>)        <span class="comment">//0</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Number</span>(<span class="string">"  123 456  "</span>)<span class="comment">//NaN</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="string">"  123456   "</span>)<span class="comment">//123456</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="string">"  123.456  "</span>)<span class="comment">//123.456</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="string">"  123.45.6 "</span>)<span class="comment">//NaN</span></span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
-<h2 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a>toString()</h2><p>除undefined和null之外的所有类型的值都具有toString()方法，其作用是返回对象的字符串表示</p>
+<h2 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a>toString()</h2><p>除undefined和null之外的所有类型的值都具有toString()方法, 其作用是返回对象的字符串表示</p>
 <table>
 <thead>
 <tr>
@@ -365,11 +367,11 @@
 </thead>
 <tbody><tr>
 <td align="left">Array</td>
-<td align="left">将 Array 的元素转换为字符串。结果字符串由逗号分隔，且连接起来。</td>
+<td align="left">将 Array 的元素转换为字符串。结果字符串由逗号分隔, 且连接起来。</td>
 </tr>
 <tr>
 <td align="left">Boolean</td>
-<td align="left">如果 Boolean 值是 true，则返回 “true”。否则，返回 “false”。</td>
+<td align="left">如果 Boolean 值是 true, 则返回 “true”。否则, 返回 “false”。</td>
 </tr>
 <tr>
 <td align="left">Date</td>
@@ -381,7 +383,7 @@
 </tr>
 <tr>
 <td align="left">Function</td>
-<td align="left">返回如下格式的字符串，其中 functionname 是被调用 toString 方法函数的名称：function functionname( ) { [native code] }</td>
+<td align="left">返回如下格式的字符串, 其中 functionname 是被调用 toString 方法函数的名称 : function functionname( ) { [native code] }</td>
 </tr>
 <tr>
 <td align="left">Number</td>
@@ -393,16 +395,18 @@
 </tr>
 <tr>
 <td align="left">默认</td>
-<td align="left">返回 “[object objectname]”，其中 objectname 是对象类型的名称。</td>
+<td align="left">返回 “[object objectname]”, 其中 objectname 是对象类型的名称。</td>
 </tr>
 </tbody></table>
 <h2 id="String"><a href="#String" class="headerlink" title="String()"></a>String()</h2><p>将任何类型的值转换为字符串  </p>
 <ul>
-<li>如果有toString()方法，则调用该方法（不传递radix参数）并返回结果</li>
-<li>如果是null，返回”null”</li>
-<li>如果是undefined，返回”undefined”</li>
+<li>如果有toString()方法, 则调用该方法 ( 不传递radix参数 ) 并返回结果</li>
+<li>如果是null, 返回”null”</li>
+<li>如果是undefined, 返回”undefined”</li>
 </ul>
-<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean()"></a>Boolean()</h2><p>将任何类型的值转换为布尔值<br>下值会被转换为false：false、””(空字符串)、0、NaN、null、undefined，其余任何值都会被转换为true</p>
+<h2 id="window-Boolean"><a href="#window-Boolean" class="headerlink" title="window.Boolean()"></a>window.Boolean()</h2><p>将任何类型的值转换为布尔值<br>以下值会被转换为false : false, ””(空字符串), 0, NaN, null, undefined, 其余任何值都会被转换为true</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.Boolean(<span class="literal">false</span>);      <span class="comment">//false</span></span><br><span class="line"><span class="built_in">window</span>.Boolean(<span class="string">""</span>);         <span class="comment">//false</span></span><br><span class="line"><span class="built_in">window</span>.Boolean(<span class="number">0</span>);          <span class="comment">//false</span></span><br><span class="line"><span class="built_in">window</span>.Boolean(<span class="literal">NaN</span>);        <span class="comment">//false</span></span><br><span class="line"><span class="built_in">window</span>.Boolean(<span class="literal">null</span>);       <span class="comment">//false</span></span><br><span class="line"><span class="built_in">window</span>.Boolean(<span class="literal">undefined</span>);  <span class="comment">//false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//其余所有值都会返回 true</span></span><br></pre></td></tr></table></figure>
+
 <p><br><br><br><br>参考文献 : <a href="https://www.cnblogs.com/Juphy/p/7085197.html" target="_blank" rel="noopener">https://www.cnblogs.com/Juphy/p/7085197.html</a></p>
 
       
@@ -522,7 +526,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -559,7 +563,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#显式转换"><span class="nav-number">1.</span> <span class="nav-text">显式转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#parseInt-amp-parseFloat"><span class="nav-number">1.1.</span> <span class="nav-text">parseInt() &amp; parseFloat()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这两个函数只能对-String-类型使用-其他类型会返回-NaN"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">这两个函数只能对 String 类型使用,其他类型会返回 NaN</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number"><span class="nav-number">1.2.</span> <span class="nav-text">Number()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#可以将任意类型的参数mix转换为数值类型"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">可以将任意类型的参数mix转换为数值类型</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-NaN"><span class="nav-number">1.3.</span> <span class="nav-text">toString()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#String"><span class="nav-number">1.4.</span> <span class="nav-text">String()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Boolean"><span class="nav-number">1.5.</span> <span class="nav-text">Boolean()</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#显式转换"><span class="nav-number">1.</span> <span class="nav-text">显式转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#parseInt-amp-parseFloat"><span class="nav-number">1.1.</span> <span class="nav-text">parseInt() &amp; parseFloat()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这两个函数只能对-String-类型使用-其他类型会返回-NaN"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">这两个函数只能对 String 类型使用,其他类型会返回 NaN</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#window-Number"><span class="nav-number">1.2.</span> <span class="nav-text">window.Number()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#可以将任意类型的参数mix转换为数值类型"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">可以将任意类型的参数mix转换为数值类型</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-NaN"><span class="nav-number">1.3.</span> <span class="nav-text">toString()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#String"><span class="nav-number">1.4.</span> <span class="nav-text">String()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#window-Boolean"><span class="nav-number">1.5.</span> <span class="nav-text">window.Boolean()</span></a></li></div>
             
 
           </div>
