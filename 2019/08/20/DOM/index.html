@@ -88,7 +88,7 @@
 <meta property="og:description" content="HTML DOM 简介什么是HTML DOM?DOM是W3C的标准 , 它定义了访问 HTML 和 XML 文档的标准 , HTML DOM 则是专门适用于 HTML / XHTML 的文档对象模型 , 定义了访问和操作 HTML 文档的标准方法 , 并将 HTML 文档呈现为带有元素 , 属性与文本的树状结构HTML DOM 独立于平台和编程语言 , 它可被任何编程语言 , 如 Java , J">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/21/mt7Kr4.gif">
-<meta property="og:updated_time" content="2019-08-21T12:32:15.261Z">
+<meta property="og:updated_time" content="2019-08-22T00:04:13.373Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML DOM (1)">
 <meta name="twitter:description" content="HTML DOM 简介什么是HTML DOM?DOM是W3C的标准 , 它定义了访问 HTML 和 XML 文档的标准 , HTML DOM 则是专门适用于 HTML / XHTML 的文档对象模型 , 定义了访问和操作 HTML 文档的标准方法 , 并将 HTML 文档呈现为带有元素 , 属性与文本的树状结构HTML DOM 独立于平台和编程语言 , 它可被任何编程语言 , 如 Java , J">
@@ -426,7 +426,7 @@
 <h3 id="document-getElementById-id"><a href="#document-getElementById-id" class="headerlink" title="document.getElementById(id)"></a><font color="#f30">document.getElementById(id)</font></h3><p>说明 : 按照指定 id 取得元素对象  </p>
 <p>如果 id 重复 , 则返回第一个对象<br>document.getElementById(id) 的返回值是一个对象 , 有 value 和 length 等属性</p>
 <h3 id="document-getElementsByTagName-tagName"><a href="#document-getElementsByTagName-tagName" class="headerlink" title="document.getElementsByTagName(tagName)"></a><font color="#f30">document.getElementsByTagName(tagName)</font></h3><p>说明 : 按照标签名取得元素节点列表  </p>
-<p>此方法的返回值 , 看似是一个数组 , 实则是一个伪数组 , 只支持length属性 , 它是一个动态的元素节点集合 , 会根据 DOM 数的变化自动更新   </p>
+<p>此方法的返回值 , 看似是一个数组 , 实则是一个伪数组 , 只支持length属性 , 它是一个动态的元素节点集合 , 会根据 DOM 树的变化自动更新   </p>
 <p>如果想对getElementsByTagName()返回值调用数组方法 , 可将其转化为数组<br>方法如下  </p>
 <pre><code class="js"><span class="keyword">var</span> divObjs=<span class="built_in">document</span>.getElementsByTagName(<span class="string">"div"</span>);
 <span class="comment">// 方法一</span>
@@ -539,6 +539,10 @@ node.removeAttribute(<span class="string">'name'</span>);</code></pre>
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/08/22/DOM2/" rel="prev" title>
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -614,7 +618,7 @@ node.removeAttribute(<span class="string">'name'</span>);</code></pre>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
