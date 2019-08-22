@@ -280,7 +280,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/22/DOM2/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2019/08/22/DOM2/" itemprop="url">HTML DOM (2)</a></h1>
         
 
         <div class="post-meta">
@@ -292,7 +292,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T07:51:55+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T10:33:14+08:00">
                 2019-08-22
               </time>
             
@@ -331,210 +331,16 @@
 
       
         
-          
-            <hr>
-<p>title: HTML DOM (2)<br>date: 2019-08-22 07:51:55</p>
-<h2 id="tags-JavaScript-JS-DOM"><a href="#tags-JavaScript-JS-DOM" class="headerlink" title="tags: JavaScript JS DOM"></a>tags: JavaScript JS DOM</h2><h1 id="节点属性"><a href="#节点属性" class="headerlink" title="节点属性"></a><font color="#900">节点属性</font></h1><h2 id="nodeName-nodeValue-nodeType"><a href="#nodeName-nodeValue-nodeType" class="headerlink" title="nodeName, nodeValue, nodeType"></a>nodeName, nodeValue, nodeType</h2><p>这三个属性的值取决于节点的类型</p>
+          <h1 id="节点属性"><a href="#节点属性" class="headerlink" title="节点属性"></a><font color="#900">节点属性</font></h1><h2 id="nodeName-nodeValue-nodeType"><a href="#nodeName-nodeValue-nodeType" class="headerlink" title="nodeName, nodeValue, nodeType"></a>nodeName, nodeValue, nodeType</h2><p>这三个属性的值取决于节点的类型</p>
 <h3 id="nodeName-emsp-节点名称"><a href="#nodeName-emsp-节点名称" class="headerlink" title="nodeName&emsp;节点名称"></a>nodeName&emsp;节点名称</h3><ul>
 <li>元素节点的 nodeName 是标签名称 (大写)</li>
 <li>属性节点的 nodeName 是属性名称</li>
 <li>文本节点的 nodeName 永远是 #text</li>
-<li>文档节点的 nodeName 永远是 #document</li>
+<li>文档节点的 nodeName 永远是 #document   </li>
 </ul>
-<pre><code class="js"><span class="built_in">console</span>.log(<span class="built_in">document</span>.nodeName); <span class="comment">//#document</span>
-<span class="built_in">console</span>.log(element.nodeName);  <span class="comment">//DIV</span>
-<span class="built_in">console</span>.log(attr.nodeName);     <span class="comment">//id</span>
-<span class="built_in">console</span>.log(text.nodeName);     <span class="comment">//#text</span></code></pre>
-<h3 id="nodeValue-emsp-节点值"><a href="#nodeValue-emsp-节点值" class="headerlink" title="nodeValue&emsp;节点值"></a>nodeValue&emsp;节点值</h3><ul>
-<li>对于文本节点，nodeValue 属性包含文本。</li>
-<li>对于属性节点，nodeValue 属性包含属性值。</li>
-<li>文档节点和元素节点，nodeValue 属性的值始  </li>
-</ul>
-<h3 id="nodeType-emsp-节点类型"><a href="#nodeType-emsp-节点类型" class="headerlink" title="nodeType&emsp;节点类型"></a>nodeType&emsp;节点类型</h3><table>
-<thead>
-<tr>
-<th align="left">常量名</th>
-<th align="left">常量值</th>
-<th align="left">节点类型</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Node.ELEMENT_NODE</td>
-<td align="left">1</td>
-<td align="left">Element</td>
-<td align="left">代表元素节点</td>
-</tr>
-<tr>
-<td align="left">Node.ATTRIBUTE_NODE</td>
-<td align="left">2</td>
-<td align="left">Attr</td>
-<td align="left">代表属性节点</td>
-</tr>
-<tr>
-<td align="left">Node.TEXT_NODE</td>
-<td align="left">3</td>
-<td align="left">Text</td>
-<td align="left">代表文本节点</td>
-</tr>
-<tr>
-<td align="left">Node.COMMENT_NODE</td>
-<td align="left">8</td>
-<td align="left">Comment</td>
-<td align="left">代表注释节点</td>
-</tr>
-<tr>
-<td align="left">Node.DOCUMENT_NODE</td>
-<td align="left">9</td>
-<td align="left">Document</td>
-<td align="left">代表整个文档</td>
-</tr>
-</tbody></table>
-<h2 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h2><h3 id="textContent-innerText-innerHTML"><a href="#textContent-innerText-innerHTML" class="headerlink" title="textContent / innerText / innerHTML"></a><font color="#f30">textContent / innerText / innerHTML</font></h3><pre><code class="html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"element"</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Test text<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">div</span>&gt;</span></code></pre>
-<pre><code class="js"><span class="keyword">var</span> element = <span class="built_in">document</span>.getElementById(<span class="string">'element'</span>)
-
-<span class="built_in">console</span>.log(element.innerHTML)  <span class="comment">//    &lt;p&gt;Test text&lt;/p&gt;</span>
-<span class="built_in">console</span>.log(element.innerText)  <span class="comment">//Test text</span>
-<span class="built_in">console</span>.log(element.textContent)<span class="comment">//    Test text</span></code></pre>
-<p>innerHTML : 获取节点内的元素与文本 , 以 string 类型存储<br>innerText : 获取节点内的文本 ( 不包括空白字符 )<br>textContent : 获取节点内的文本 ( 包括空白字符 )   </p>
-<h3 id="parentNode-parentElement-emsp-父节点-父元素"><a href="#parentNode-parentElement-emsp-父节点-父元素" class="headerlink" title="parentNode / parentElement&emsp;父节点 / 父元素"></a><font color="#f30">parentNode / parentElement&emsp;父节点 / 父元素</font></h3><p>取得某一节点的父节点 / 取得某一节点的父元素<br>一般情况下 , 这两种属性的值是相等的 , 特例为根节点 document , document 属于节点 , 但不是元素节点 , 此时 parentNode 的值为#document , 但 parentElement 的值为 null   </p>
-<h3 id="previousSibling-previousElementChild-emsp-前一个兄弟节点-前一个兄弟元素"><a href="#previousSibling-previousElementChild-emsp-前一个兄弟节点-前一个兄弟元素" class="headerlink" title="previousSibling / previousElementChild&emsp;前一个兄弟节点 / 前一个兄弟元素"></a><font color="#f30">previousSibling / previousElementChild&emsp;前一个兄弟节点 / 前一个兄弟元素</font></h3><p>previousSibling 不仅能够返回子元素(ElementNode) , 还可能取得文本节点(TextNode) , 谨慎使用<br>IE8以下浏览器中 previousSibling 会取得前一个兄弟元素 , 且不支持previousElementChild  </p>
-<h3 id="nextSibling-nextElementChild-emsp-下一个兄弟节点-下一个兄弟元素"><a href="#nextSibling-nextElementChild-emsp-下一个兄弟节点-下一个兄弟元素" class="headerlink" title="nextSibling / nextElementChild&emsp;下一个兄弟节点 / 下一个兄弟元素"></a><font color="#f30">nextSibling / nextElementChild&emsp;下一个兄弟节点 / 下一个兄弟元素</font></h3><p>使用方法 , 特性及兼容性与 previousSibling / previousElementChild 相似   </p>
-<h3 id="childNodes-children-emsp-子节点集合-子元素集合"><a href="#childNodes-children-emsp-子节点集合-子元素集合" class="headerlink" title="childNodes / children&emsp;子节点集合 / 子元素集合"></a><font color="#f30">childNodes / children&emsp;子节点集合 / 子元素集合</font></h3><p>同 firstChild / firstElementChild , childNodes 能够取得文本节点 , 但 children 只会取得元素节点<br>在 firefox 与 chrome 等主流浏览器中 , 会将 <font color="#000">空格 / 制表符 / 换行</font> 等空白字符解析为空的文本节点 , 在使用 childNodes 时 , 需要注意这些空白字符   </p>
-<h3 id="firstChild-firstElementChild-emsp-首个子节点-首个子元素"><a href="#firstChild-firstElementChild-emsp-首个子节点-首个子元素" class="headerlink" title="firstChild / firstElementChild&emsp;首个子节点 / 首个子元素"></a><font color="#f30">firstChild / firstElementChild&emsp;首个子节点 / 首个子元素</font></h3><p>取得某一节点的第一个子节点 / 取得某一节点的第一个子元素<br>firstChild 不仅能够取得子元素(ElementNode) , 还能取得文本节点(TextNode) , 谨慎使用  </p>
-<p>可使用 firstElementChild 获取节点的第一个元素节点   </p>
-<p>发现有如下写法 , 原发布者认为可以使用这种方法避免firstChild取得文本节点 , 而得到元素节点</p>
-<pre><code class="js">firstChild(element);<span class="comment">//ReferenceError: firstChild is not defined</span></code></pre>
-<p>Firfox 与 Chrome 测试时报错 , 方法不可行  </p>
-<p>兼容性 : IE8 以下浏览器中 firstChild 会取得第一个元素节点 ,  firstElementChild 不兼容</p>
-<h3 id="lastChild-lastElementChild-emsp-最后一个子节点-最后一个子元素"><a href="#lastChild-lastElementChild-emsp-最后一个子节点-最后一个子元素" class="headerlink" title="lastChild / lastElementChild&emsp;最后一个子节点 / 最后一个子元素"></a><font color="#f30">lastChild / lastElementChild&emsp;最后一个子节点 / 最后一个子元素</font></h3><p>使用方法与特性与 firstChild / firstElementChild 相似<br>兼容性 : IE8 以下浏览器 lastChild 会取得最后一个元素节点 , 不支持lastElementChild</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-    <div>
-        
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/20/DOM/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Rol E">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Roland Edgeworth">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/20/DOM/" itemprop="url">HTML DOM (1)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T17:27:05+08:00">
-                2019-08-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="HTML-DOM-简介"><a href="#HTML-DOM-简介" class="headerlink" title="HTML DOM 简介"></a><font color="#900">HTML DOM 简介</font></h1><h2 id="什么是HTML-DOM"><a href="#什么是HTML-DOM" class="headerlink" title="什么是HTML DOM?"></a>什么是HTML DOM?</h2><p>DOM是W3C的标准 , 它定义了访问 HTML 和 XML 文档的标准 , HTML DOM 则是专门适用于 HTML / XHTML 的文档对象模型 , 定义了访问和操作 HTML 文档的标准方法 , 并将 HTML 文档呈现为带有元素 , 属性与文本的树状结构<br>HTML DOM 独立于平台和编程语言 , 它可被任何编程语言 , 如 Java , JavaScript 和 VBScript 使用</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/08/20/DOM/#more" rel="contents">
+            <a class="btn" href="/2019/08/22/DOM2/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -663,6 +469,133 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/08/20/兔子问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    <div>
+        
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/20/DOM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rol E">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Roland Edgeworth">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/20/DOM/" itemprop="url">HTML DOM (1)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T17:27:05+08:00">
+                2019-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="HTML-DOM-简介"><a href="#HTML-DOM-简介" class="headerlink" title="HTML DOM 简介"></a><font color="#900">HTML DOM 简介</font></h1><h2 id="什么是HTML-DOM"><a href="#什么是HTML-DOM" class="headerlink" title="什么是HTML DOM?"></a>什么是HTML DOM?</h2><p>DOM是W3C的标准 , 它定义了访问 HTML 和 XML 文档的标准 , HTML DOM 则是专门适用于 HTML / XHTML 的文档对象模型 , 定义了访问和操作 HTML 文档的标准方法 , 并将 HTML 文档呈现为带有元素 , 属性与文本的树状结构<br>HTML DOM 独立于平台和编程语言 , 它可被任何编程语言 , 如 Java , JavaScript 和 VBScript 使用</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/20/DOM/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
