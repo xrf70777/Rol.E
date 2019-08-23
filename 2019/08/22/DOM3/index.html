@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="JavaScript JS DOM,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="HTML DOM 事件 (Event)事件三要素 事件源&amp;emsp;触发事件的对象 事件类型&amp;emsp;如何触发事件 事件处理程序&amp;emsp;通过函数的方式处理  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
+<meta name="description" content="HTML DOM 事件 (Event)事件三要素 事件源&amp;emsp;触发事件的对象 事件类型&amp;emsp;如何触发事件 事件处理程序&amp;emsp;通过函数的方式处理  element.onclick = function(){   Alert(&apos;Clicked&apos;); }">
+<meta name="keywords" content="JavaScript JS DOM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DOM3">
+<meta property="og:title" content="HTML DOM (3)">
 <meta property="og:url" content="http://yoursite.com/2019/08/22/DOM3/index.html">
 <meta property="og:site_name" content="Roland Edgeworth">
-<meta property="og:description" content="HTML DOM 事件 (Event)事件三要素 事件源&amp;emsp;触发事件的对象 事件类型&amp;emsp;如何触发事件 事件处理程序&amp;emsp;通过函数的方式处理  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
+<meta property="og:description" content="HTML DOM 事件 (Event)事件三要素 事件源&amp;emsp;触发事件的对象 事件类型&amp;emsp;如何触发事件 事件处理程序&amp;emsp;通过函数的方式处理  element.onclick = function(){   Alert(&apos;Clicked&apos;); }">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-22T12:07:46.867Z">
+<meta property="og:updated_time" content="2019-08-23T03:17:16.367Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DOM3">
-<meta name="twitter:description" content="HTML DOM 事件 (Event)事件三要素 事件源&amp;emsp;触发事件的对象 事件类型&amp;emsp;如何触发事件 事件处理程序&amp;emsp;通过函数的方式处理  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
+<meta name="twitter:title" content="HTML DOM (3)">
+<meta name="twitter:description" content="HTML DOM 事件 (Event)事件三要素 事件源&amp;emsp;触发事件的对象 事件类型&amp;emsp;如何触发事件 事件处理程序&amp;emsp;通过函数的方式处理  element.onclick = function(){   Alert(&apos;Clicked&apos;); }">
 
 
 
@@ -125,7 +126,7 @@
 
 
 
-  <title>DOM3 | Roland Edgeworth</title>
+  <title>HTML DOM (3) | Roland Edgeworth</title>
   
 
 
@@ -281,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">DOM3</h1>
+          <h1 class="post-title" itemprop="name headline">HTML DOM (3)</h1>
         
 
         <div class="post-meta">
@@ -293,7 +294,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T13:18:51+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T13:21:42+08:00">
                 2019-08-22
               </time>
             
@@ -331,14 +332,62 @@
       
 
       
-        <h1 id="HTML-DOM-事件-Event"><a href="#HTML-DOM-事件-Event" class="headerlink" title="HTML DOM 事件 (Event)"></a>HTML DOM 事件 (Event)</h1><h2 id="事件三要素"><a href="#事件三要素" class="headerlink" title="事件三要素"></a>事件三要素</h2><ul>
+        <h1 id="HTML-DOM-事件-Event"><a href="#HTML-DOM-事件-Event" class="headerlink" title="HTML DOM 事件 (Event)"></a><font color="#900">HTML DOM 事件 (Event)</font></h1><h2 id="事件三要素"><a href="#事件三要素" class="headerlink" title="事件三要素"></a>事件三要素</h2><ul>
 <li>事件源&emsp;触发事件的对象</li>
 <li>事件类型&emsp;如何触发事件</li>
-<li>事件处理程序&emsp;通过函数的方式处理  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">element.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    Alert(<span class="string">'Clicked'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">## 事件流 (EventFlow)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### 事件发生的过程</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">在事件触发时，页面元素接受触发事件的顺序，被称为事件流，在事件流的定义上，微软 ( IE ) 与网景 (Netscape) 提出了完全相反的观点</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 事件捕获</span></span><br><span class="line"><span class="string">当事件发生时，触发事件元素的外侧节点先获得信息，目标节点应该最后接收到事件，是一个由外向里的过程，Netscape 支持此观点</span></span><br><span class="line"><span class="string">#### 事件冒泡</span></span><br><span class="line"><span class="string">当事件发生时，整个事件流从从里向外的，由目标节点接收，逐层向上级节点传递，IE 支持此观点  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">这样的分歧造成了浏览器兼容性的差异   </span></span><br><span class="line"><span class="string">为缓解分歧，W3C定义了DOM事件流，即  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;font color=#f06&gt;先事件捕获，到达具体目标，再事件排序&lt;/font&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">在这个过程中，每一个相关节点都会收到两次事件</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">## 事件处理</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### DOM 0</span></span><br><span class="line"><span class="string">在DOM标准定义之前的阶段，称作 DOM 0 阶段  </span></span><br><span class="line"><span class="string">DOM 0 的事件处理程序有以下特点</span></span><br><span class="line"><span class="string">+ 只能处理冒泡阶段的事件</span></span><br><span class="line"><span class="string">+ 同一个元素的同一个事件，重复绑定会覆盖</span></span><br><span class="line"><span class="string">+ this 指向 on 之前的元素</span></span><br><span class="line"><span class="string">+ 兼容性好 ( 兼容 IE )   </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 绑定 DOM 0 事件   </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>html</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;button&gt;BTN&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">```  </span></span><br><span class="line"><span class="regexp"> </span></span><br><span class="line"><span class="regexp">```js</span></span><br><span class="line"><span class="regexp">var btn = document.querySelector('button');</span></span><br><span class="line"><span class="regexp">var div = document.querySelector('div');</span></span><br><span class="line"><span class="regexp">var bdy = document.querySelector('body');</span></span><br><span class="line"><span class="regexp">btn.onclick = function()&#123;</span></span><br><span class="line"><span class="regexp">    console.log(this.tagName)</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">div.onclick = function()&#123;</span></span><br><span class="line"><span class="regexp">    console.log(this.tagName)</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">bdy.onclick = function()&#123;</span></span><br><span class="line"><span class="regexp">    console.log(this.tagName)</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/点击Button , 控制台输出如下</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/BUTTON</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/DIV</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/BODY</span></span><br><span class="line"><span class="regexp">```       </span></span><br><span class="line"><span class="regexp">可见，DOM 0 的事件处理程序并没有处理捕获阶段的事件   </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">#### 清除 DOM 0 事件   </span></span><br><span class="line"><span class="regexp">```js</span></span><br><span class="line"><span class="regexp">btn.onclick = null;</span></span><br><span class="line"><span class="regexp">```   </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">## 事件对象 (Event)</span></span><br><span class="line"><span class="regexp">事件对象中存放着与发生的事件相关联的信息 , 如光标位置 , 键盘按下的键值   </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">### 取得事件对象的方法</span></span><br><span class="line"><span class="regexp">+ 事件处理函数的参数</span></span><br><span class="line"><span class="regexp">+ window.event   </span></span><br><span class="line"><span class="regexp">```js</span></span><br><span class="line"><span class="regexp">window.onclick = function(evt) &#123;</span></span><br><span class="line"><span class="regexp">    var e = evt || window.event;</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/如果 evt 有值，则取用 evt 的值，否则使用window.event的值</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/处理 IE8 以下浏览器兼容性问题</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure>
-
+<li>事件处理程序&emsp;通过函数的方式处理  <pre><code class="js">element.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+  Alert(<span class="string">'Clicked'</span>);
+}</code></pre>
+<a id="more"></a>
 
 </li>
 </ul>
+<h2 id="事件流-EventFlow"><a href="#事件流-EventFlow" class="headerlink" title="事件流 (EventFlow)"></a><font color="#40c">事件流 (EventFlow)</font></h2><h3 id="事件发生的过程"><a href="#事件发生的过程" class="headerlink" title="事件发生的过程"></a>事件发生的过程</h3><p>在事件触发时，页面元素接受触发事件的顺序，被称为事件流，在事件流的定义上，微软 ( IE ) 与网景 (Netscape) 提出了完全相反的观点</p>
+<h4 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h4><p>当事件发生时，触发事件元素的外侧节点先获得信息，目标节点应该最后接收到事件，是一个由外向里的过程，Netscape 支持此观点</p>
+<h4 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h4><p>当事件发生时，整个事件流从从里向外的，由目标节点接收，逐层向上级节点传递，IE 支持此观点  </p>
+<p>这样的分歧造成了浏览器兼容性的差异<br>为缓解分歧，W3C定义了DOM事件流，即  </p>
+<p><font color="#f06">先事件捕获，到达具体目标，再事件排序</font></p>
+<p>在这个过程中，每一个相关节点都会收到两次事件</p>
+<h2 id="事件处理"><a href="#事件处理" class="headerlink" title="事件处理"></a><font color="#40c">事件处理</font></h2><h3 id="DOM-0"><a href="#DOM-0" class="headerlink" title="DOM 0"></a>DOM 0</h3><p>在DOM标准定义之前的阶段，称作 DOM 0 阶段<br>DOM 0 的事件处理程序有以下特点</p>
+<ul>
+<li>只能处理冒泡阶段的事件</li>
+<li>同一个元素的同一个事件，重复绑定会覆盖</li>
+<li>this 指向 on 之前的元素</li>
+<li>兼容性好 ( 兼容 IE )   </li>
+</ul>
+<h4 id="绑定-DOM-0-事件"><a href="#绑定-DOM-0-事件" class="headerlink" title="绑定 DOM 0 事件"></a>绑定 DOM 0 事件</h4><pre><code class="html"><span class="tag">&lt;<span class="name">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">button</span>&gt;</span>BTN<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">body</span>&gt;</span></code></pre>
+<pre><code class="js"><span class="keyword">var</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">'button'</span>);
+<span class="keyword">var</span> div = <span class="built_in">document</span>.querySelector(<span class="string">'div'</span>);
+<span class="keyword">var</span> bdy = <span class="built_in">document</span>.querySelector(<span class="string">'body'</span>);
+btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(<span class="keyword">this</span>.tagName)
+}
+div.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(<span class="keyword">this</span>.tagName)
+}
+bdy.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(<span class="keyword">this</span>.tagName)
+}
+<span class="comment">//点击Button , 控制台输出如下</span>
+<span class="comment">//BUTTON</span>
+<span class="comment">//DIV</span>
+<span class="comment">//BODY</span></code></pre>
+<p>可见，DOM 0 的事件处理程序并没有处理捕获阶段的事件   </p>
+<h4 id="清除-DOM-0-事件"><a href="#清除-DOM-0-事件" class="headerlink" title="清除 DOM 0 事件"></a>清除 DOM 0 事件</h4><pre><code class="js">btn.onclick = <span class="literal">null</span>;</code></pre>
+<h2 id="事件对象-Event"><a href="#事件对象-Event" class="headerlink" title="事件对象 (Event)"></a><font color="#40c">事件对象 (Event)</font></h2><p>事件对象中存放着与发生的事件相关联的信息 , 如光标位置 , 键盘按下的键值   </p>
+<h3 id="取得事件对象的方法"><a href="#取得事件对象的方法" class="headerlink" title="取得事件对象的方法"></a>取得事件对象的方法</h3><ul>
+<li>事件处理函数的参数</li>
+<li>window.event     </li>
+</ul>
+<pre><code class="js"><span class="built_in">window</span>.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">evt</span>) </span>{
+    <span class="keyword">var</span> e = evt || <span class="built_in">window</span>.event;
+    <span class="comment">//如果 evt 有值，则取用 evt 的值，否则使用window.event的值</span>
+    <span class="comment">//处理 IE8 以下浏览器兼容性问题</span>
+}</code></pre>
 <h3 id="事件对象相关属性与方法"><a href="#事件对象相关属性与方法" class="headerlink" title="事件对象相关属性与方法"></a>事件对象相关属性与方法</h3><table>
 <thead>
 <tr>
@@ -388,6 +437,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript-JS-DOM/" rel="tag"># JavaScript JS DOM</a>
+          
+        </div>
+      
 
       
       
@@ -407,7 +462,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/22/数组/" rel="prev" title="数组">
+              <a href="/2019/08/23/数组/" rel="prev" title="数组">
                 数组 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -486,7 +541,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -499,7 +554,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -532,7 +587,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-DOM-事件-Event"><span class="nav-number">1.</span> <span class="nav-text">HTML DOM 事件 (Event)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#事件三要素"><span class="nav-number">1.1.</span> <span class="nav-text">事件三要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事件对象相关属性与方法"><span class="nav-number">1.1.1.</span> <span class="nav-text">事件对象相关属性与方法</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-DOM-事件-Event"><span class="nav-number">1.</span> <span class="nav-text">HTML DOM 事件 (Event)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#事件三要素"><span class="nav-number">1.1.</span> <span class="nav-text">事件三要素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件流-EventFlow"><span class="nav-number">1.2.</span> <span class="nav-text">事件流 (EventFlow)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事件发生的过程"><span class="nav-number">1.2.1.</span> <span class="nav-text">事件发生的过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#事件捕获"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">事件捕获</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事件冒泡"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">事件冒泡</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件处理"><span class="nav-number">1.3.</span> <span class="nav-text">事件处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM-0"><span class="nav-number">1.3.1.</span> <span class="nav-text">DOM 0</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#绑定-DOM-0-事件"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">绑定 DOM 0 事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清除-DOM-0-事件"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">清除 DOM 0 事件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件对象-Event"><span class="nav-number">1.4.</span> <span class="nav-text">事件对象 (Event)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#取得事件对象的方法"><span class="nav-number">1.4.1.</span> <span class="nav-text">取得事件对象的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件对象相关属性与方法"><span class="nav-number">1.4.2.</span> <span class="nav-text">事件对象相关属性与方法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
