@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Roland Edgeworth">
 <meta property="og:description" content="数组定义数组是一组数据的集合 , 在一个数组中 , 数组元素可以是任何类型 , 在内存中是一段连续的内存空间每个元素在数组中占据一个位置 , 称为索引 , 索引从 0 开始 , 最大值为数组长度减 1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-23T08:53:52.684Z">
+<meta property="og:updated_time" content="2019-08-23T11:46:22.874Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数组">
 <meta name="twitter:description" content="数组定义数组是一组数据的集合 , 在一个数组中 , 数组元素可以是任何类型 , 在内存中是一段连续的内存空间每个元素在数组中占据一个位置 , 称为索引 , 索引从 0 开始 , 最大值为数组长度减 1">
@@ -433,9 +433,9 @@ table th:first-of-type {
 <span class="comment">//[1, 2, 3, 4, 5, 6]</span></code></pre>
 <h3 id="arrayObject-join-separator"><a href="#arrayObject-join-separator" class="headerlink" title="arrayObject.join(separator)"></a>arrayObject.join(separator)</h3><p>将数组中的所有元素放入一个字符串 , 元素之间用指定的分隔符分隔<br>参数 separator (分隔符) 可选 , 如参数缺省 , 默认使用逗号作为分隔府<br>不改变原数组    </p>
 <pre><code class="js"><span class="keyword">var</span> arrE = [a, b, c];
-<span class="built_in">console</span>.log(arrE.join(-));
+<span class="built_in">console</span>.log(arrE.join());
 <span class="comment">//a-b-c</span></code></pre>
-<p>注 : String.split() 与 join() 的功能相反 , 将字符按照指定的分隔符切割为数组 , 搭配使用 , 可实现反转字符串功能   </p>
+<p>注 : String.split() 与 join() 的功能相反 , 将字符串按照指定的分隔符切割为数组 , 搭配使用 , 可实现反转字符串功能   </p>
 <pre><code class="js"><span class="keyword">var</span> info = <span class="string">"Hello!"</span>
 info.split(<span class="string">''</span>);<span class="comment">//分隔符为空字符串</span>
 <span class="built_in">console</span>.log(info);<span class="comment">//['H', 'e', 'l', 'l', 'o']</span>
@@ -643,7 +643,7 @@ info = info.reverse().join(<span class="string">''</span>);
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
