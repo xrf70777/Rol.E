@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[猴子问题]]></title>
-    <url>%2F2019%2F08%2F24%2F%E7%8C%B4%E5%AD%90%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[猴子吃桃子猴子第一天摘下若干个桃子，吃了总数的一半，还不过瘾，又多吃了一个第二天早上又将剩下的桃子吃掉一半，又多吃了一个以后每天早上都吃了前一天剩下的一半零一个到第10天早上想再吃时，见只剩下一个桃子了求第一天共摘了多少 递归解法123456789101112131415161718192021222324252627282930var counter = 0;function monkey(n)&#123; counter ++; if(counter&gt;=10)&#123;console.log(n);return;&#125; return monkey((n+1)*2); /* Day1 1534 Day2 766 Day3 382 Day4 190 Day5 94 Day6 46 Day7 22 Day8 10 Day9 4 Day10 1 */&#125;``` ## 循环解法```jsfunction monkey2()&#123; var peach = 1; for(var i=1 ; i&lt;10 ; i++)&#123; peach = (++peach)*2; &#125; console.log(peach)&#125;]]></content>
+    <title><![CDATA[事件——鼠标事件]]></title>
+    <url>%2F2019%2F08%2F24%2FDOM4%2F</url>
+    <content type="text"><![CDATA[鼠标事件 名称 描述 onmousedown 任何鼠标按键按下 onmousemove 鼠标移动 onmouseup 某个鼠标按键被松开 onmouseover 鼠标移上某元素 onmouseout 鼠标移出某元素 onmouseenter 指针移入某元素 ( 不冒泡 ) onmouseleave 指针移出某元素 ( 不冒泡 ) oncontextmenu 右键菜单 onmousewhell 滚轮事件 onmouseover &amp; onmouseout / onmouseenter &amp; onmouseleaveonmouseover &amp; onmouseout onmouseenter,onmouseleaveonmouseover 与 onmouseenter 为当光标移入某元素，onmouseout 与 onmouseleave 为光标移出某元素，效果几乎完全相同，唯一的区别是 onmouseenter 与 onmouseleave 事件不会进入冒泡阶段 测试时发现，如果鼠标在页面加载完成之前就停留在目标元素上，onmouseenter 偶尔会出现未触发的情况，当光标进行移动后，才会触发事件]]></content>
+      <tags>
+        <tag>JavaScript JS DOM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[递归与循环练习]]></title>
+    <url>%2F2019%2F08%2F24%2F%E9%80%92%E5%BD%92%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[兔子问题(斐波那契数列)问 : 兔子在出生两个月后成熟 , 一对成熟兔子在出生后第三个月后每个月能生出一对小兔子 , 假设, 第一个月有一对刚出生的兔子 , 如果所有兔子都不死 , 那么一年以后可以繁殖多少对兔子 由题可知,在最初的两个月中 , 兔子的总数保持不变 , 从第三个月开始 , 开始出现新生的兔子 本月新生兔子的数量 = 出生达到第三个月的兔子数量 即 本月新生兔子的数量 = 两个月之前出生的兔子数量 + 三个月前的兔子总数 而 “ 两个月之前出生的兔子数量 + 三个月前的兔子总数 “ 所得到的值 , 等于两个月前的兔子总数 那么 , 我们可以得到以下结论 在兔子不死的前提下 , 本月新生的兔子数量 , 等于两个月前的兔子总数 又有当前兔子总数 = 上月兔子总数 + 本月新生的兔子数量 由此可知 , 本月兔子总数 , 等于上月兔子总数 + 两个月前的兔子总数 上月兔子总数 + 两个月前的兔子总数 = ( 两个月前兔子总数 + 三个月前兔子总数 ) + ( 三个月前兔子总数 + 四个月前兔子总数 ) 以此类推 到这里 , 最困难的逻辑整理部分已经完成 以下为我的解决方案 , 利用了递归调用 function rabbit(n){ if(n&lt;=2){return 1;} return rabbit(n-1)+rabbit(n-2); } 猴子吃桃子猴子第一天摘下若干个桃子 , 吃了总数的一半 , 还不过瘾 , 又多吃了一个以后每天早上都吃了前一天剩下的一半零一个到了第 10 天 , 只剩下一个桃子了求第一天共摘了多少桃子 如题 , 前天的桃子数量 = ( 今天的桃子数量 + 1 ) × 2 递归解法var counter = 0; function monkey(n){ counter ++; if(counter&gt;=10){console.log(n);return;} return monkey((n+1)*2); /* Day1 1534 Day2 766 Day3 382 Day4 190 Day5 94 Day6 46 Day7 22 Day8 10 Day9 4 Day10 1 */ } 循环解法function monkey2(){ var peach = 1; for(var i=1 ; i&lt;10 ; i++){ peach = (++peach)*2; } console.log(peach) } 弹球一球从100米高度自由落下 , 每次落地后反跳回原高度的一半 , 再落下 , 求它在第5次落地时 , 共经过多少米 递归解法var times = 1; var height = 0; function ball1(n){ if(times &gt; 5){console.log(height-100);return n;} height = height + n*2; times++; return ball1(n/2) } 递归解法function ball2(){ var start = 100; for(var i=1;i&lt;5;i++){ start = start/2; height = height + start*2; } return height+100; }]]></content>
   </entry>
   <entry>
     <title><![CDATA[Math]]></title>
@@ -35,14 +43,6 @@
     <content type="text"><![CDATA[节点属性nodeName, nodeValue, nodeType这三个属性的值取决于节点的类型 nodeName&emsp;节点名称 元素节点的 nodeName 是标签名称 (大写) 属性节点的 nodeName 是属性名称 文本节点的 nodeName 永远是 #text 文档节点的 nodeName 永远是 #document console.log(document.nodeName); //#document console.log(element.nodeName); //DIV console.log(attr.nodeName); //id console.log(text.nodeName); //#text nodeValue&emsp;节点值 对于文本节点，nodeValue 属性包含文本。 对于属性节点，nodeValue 属性包含属性值。 文档节点和元素节点，nodeValue 属性的值始 nodeType&emsp;节点类型 常量名 常量值 节点类型 描述 Node.ELEMENT_NODE 1 Element 代表元素节点 Node.ATTRIBUTE_NODE 2 Attr 代表属性节点 Node.TEXT_NODE 3 Text 代表文本节点 Node.COMMENT_NODE 8 Comment 代表注释节点 Node.DOCUMENT_NODE 9 Document 代表整个文档 常用属性textContent / innerText / innerHTML&lt;div id="element"&gt; &lt;p&gt;Test text&lt;/p&gt; &lt;/div&gt; var element = document.getElementById('element') console.log(element.innerHTML) // &lt;p&gt;Test text&lt;/p&gt; console.log(element.innerText) //Test text console.log(element.textContent)// Test text innerHTML : 获取节点内的元素与文本 , 以 string 类型存储innerText : 获取节点内的文本 ( 不包括空白字符 )textContent : 获取节点内的文本 ( 包括空白字符 ) parentNode / parentElement&emsp;父节点 / 父元素取得某一节点的父节点 / 取得某一节点的父元素一般情况下 , 这两种属性的值是相等的 , 特例为根节点 document , document 属于节点 , 但不是元素节点 , 此时 parentNode 的值为#document , 但 parentElement 的值为 null previousSibling / previousElementChild&emsp;前一个兄弟节点 / 前一个兄弟元素previousSibling 不仅能够返回子元素(ElementNode) , 还可能取得文本节点(TextNode) , 谨慎使用IE8以下浏览器中 previousSibling 会取得前一个兄弟元素 , 且不支持previousElementChild nextSibling / nextElementChild&emsp;下一个兄弟节点 / 下一个兄弟元素使用方法 , 特性及兼容性与 previousSibling / previousElementChild 相似 childNodes / children&emsp;子节点集合 / 子元素集合同 firstChild / firstElementChild , childNodes 能够取得文本节点 , 但 children 只会取得元素节点在 firefox 与 chrome 等主流浏览器中 , 会将 空格 / 制表符 / 换行 等空白字符解析为空的文本节点 , 在使用 childNodes 时 , 需要注意这些空白字符 firstChild / firstElementChild&emsp;首个子节点 / 首个子元素取得某一节点的第一个子节点 / 取得某一节点的第一个子元素firstChild 不仅能够取得子元素(ElementNode) , 还能取得文本节点(TextNode) , 谨慎使用 可使用 firstElementChild 获取节点的第一个元素节点 发现有如下写法 , 原发布者认为可以使用这种方法避免firstChild取得文本节点 , 而得到元素节点 firstChild(element);//ReferenceError: firstChild is not defined Firfox 与 Chrome 测试时报错 , 方法不可行 兼容性 : IE8 以下浏览器中 firstChild 会取得第一个元素节点 , firstElementChild 不兼容 lastChild / lastElementChild&emsp;最后一个子节点 / 最后一个子元素使用方法与特性与 firstChild / firstElementChild 相似兼容性 : IE8 以下浏览器 lastChild 会取得最后一个元素节点 , 不支持lastElementChild]]></content>
       <tags>
         <tag>JavaScript JS DOM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[兔子问题]]></title>
-    <url>%2F2019%2F08%2F20%2F%E5%85%94%E5%AD%90%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[兔子问题(斐波那契数列)总结问 : 兔子在出生两个月后成熟 , 一对成熟兔子在出生后第三个月后每个月能生出一对小兔子 , 假设, 第一个月有一对刚出生的兔子 , 如果所有兔子都不死 , 那么一年以后可以繁殖多少对兔子 由题可知,在最初的两个月中 , 兔子的总数保持不变 , 从第三个月开始 , 开始出现新生的兔子 本月新生兔子的数量 = 出生达到第三个月的兔子数量 即 本月新生兔子的数量 = 两个月之前出生的兔子数量 + 三个月前的兔子总数 而 “ 两个月之前出生的兔子数量 + 三个月前的兔子总数 “ 所得到的值 , 等于两个月前的兔子总数 那么 , 我们可以得到以下结论 在兔子不死的前提下 , 本月新生的兔子数量 , 等于两个月前的兔子总数 又有当前兔子总数 = 上月兔子总数 + 本月新生的兔子数量 由此可知 , 本月兔子总数 , 等于上月兔子总数 + 两个月前的兔子总数 上月兔子总数 + 两个月前的兔子总数 = ( 两个月前兔子总数 + 三个月前兔子总数 ) + ( 三个月前兔子总数 + 四个月前兔子总数 ) 以此类推 到这里 , 最困难的逻辑整理部分已经完成 以下为我的解决方案 , 利用了递归调用 1234function rabbit(n)&#123; if(n&lt;=2)&#123;return 1;&#125; return rabbit(n-1)+rabbit(n-2);&#125;]]></content>
-      <tags>
-        <tag>JavaScript JS</tag>
       </tags>
   </entry>
   <entry>
